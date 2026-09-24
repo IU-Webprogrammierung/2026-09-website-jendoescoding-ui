@@ -6,7 +6,8 @@ Ziel dieses 3-monatigen Creative Labs ist ein responsiver, persönlicher Webauft
 
 ### Inhaltsverzeichnis
 
-- [Bereiche und Inhalte](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Bereiche-und-Inhalte)
+- [Konzept](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Konzept)
+- [Seitenübersicht](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Seitenübersicht)
 - [Technologie](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Technologie)
 
 ### Konzept
