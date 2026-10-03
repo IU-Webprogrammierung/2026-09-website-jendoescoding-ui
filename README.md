@@ -11,18 +11,20 @@ Ziel dieses 3-monatigen Creative Labs ist ein responsiver, persönlicher Webauft
 - [Technologie](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Technologie)
 
 ### Konzept
-Im Rahmen des Projekt wird ein Webauftritt für den Künstlerpersona [jen](https://www.youtube.com/@xunreachablee) angestrebt. Dabei handelt es sich um ein persönliches Hobby, wo diverse Lieder eigenständig aufgenommen und produziert werden.
-
-Zu dem Zeitpunkt der Erarbeitung dieser Prüfungsleistung dient der gleichnamige YouTube-Kanal als zentrale „Webpräsenz“, wo Informationen, Aufnahmeequipment sowie soziale Medien zentral verknüpft und zu finden sind. Künftig soll der geplante Webauftritt diese Aufgabe übernehmen.
+Für die Prüfungsleistung wird ein persönlicher Webauftritt für die Künstlerpersona [jen](https://www.youtube.com/@xunreachablee) in englisch erarbeitet. Diese soll stilistisch einem Album Booklet ähneln und folgende Seiten beinhalten:
 
 ### Seitenübersicht
 | Bereich | Dateiname | Inhalt
 |------|-----|-----|
-| Startseite | `index.html` | "Pseudo One-Pager" mit Teaser aller Menüpunkte |
-| Musik | `music.html` | Verknüpfung von Streaming Diensten inkl. Musikpreview |
-| Videos | `video.html` | Embed ausgewählter Videos inkl. Angabe der Rolle im Entwicklungsprozesse (Produzent, Vocals, Mix, ...) |
-| Equipment | `equipment.html` | Übersicht aktuell verwendeter Hard- und Software |
-| Kontakt | `contact.html` | Übersicht aktueller Kontaktmöglichkeiten inkl. Social Media Verlinkung |
+| Startseite | `index.html` | Startpunkt und Übersicht aktueller Projekte  |
+| Über Mich | `about.html` | Inhalte über die Künstlerpersona: Anfänge, Meilensteine, künftige Ziele |
+| Persona | `persona.html` | Übersicht erstellter Illustrationen sowie Charakterreferenzen zur eigenen Erstellung |
+| Musik | `music.html` | Übersicht aktueller Streaming Dienste und neuster Uploads |
+| Videos | `video.html` | Persönliche Favoriten mit Annotationen rund um Rolle innerhalb des kreativen Prozesses (Produzent, Vocalist, ..) |
+| Lyrics | `lyrics.html` | Übersicht ersteller (Trans-)Lyrics inkl. Video-Embed und Annotationen |
+| Equipment | `equipment.html` | Übersicht verwendeter Hard- und Software innerhalb des kreativen Prozesses |
+| Kontakt | `contact.html` | Kontaktformular |
+| Datenschutz | `policy.html` | Aufklärung bzgl. Erhebung von persönlichen Daten durch Kontaktformular |
 | Error | `404.html` | Fehlerseite für nicht vorhandene Inhalte |
 
 ### Technologie
