@@ -3,27 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=A, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>jen's contact</title>
 </head>
+
 <body>
 
+    <!--Global Header & Navigation-->
     <header>
-        <a href="index.html">jen</a>
-            <ul>
-                <li><a href="about.html">about me</a></li>
-                <li><a href="videos.html">video</a></li>
-                <li><a href="music.html">music</a></li>
-                <li><a href="equipment.html">equipment</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
+        <div class="grid-main">
+
+            <nav class="topnav">
+                <a href="index.html">
+                    <img src="assets/dlogo.svg" alt="logo of jen" id="logo-main">
+                </a>
+                <a href="about.html">about</a>
+                <a href="persona.html">persona</a>
+                <a href="music.html">music</a>
+                <a href="videos.html">videos</a>
+                <a href="lyrics.html">lyrics</a>
+                <a href="equipment.html">equipment</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <img src="assets/heroimagejen.png" alt="Jen sitting in grass" id="hero-main">
+        </div>
     </header>
 
-    <main>
+    <!--Page Content-->
+    <div class="contact-container">
         <h1>get in touch!</h1>
-            <ul>
-                <li>shoot a message my way:<br>xunreachablee@web.de</li>
-            </ul>
-    </main>
+            <form action="/action_page.php">
+                <label for="yname">your name:</label><br>
+                <input type="text" id="yname" name="yname"><br>
+                <label for="lname">your message:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                
+                <input type="submit" value="Submit"><br>
+
+                    <input type="radio" id="privacy" name="pol_privacy" value="JavaScript">
+                    <label for="privacy">I’ve read the privacy policy and consent to my data being shared with jen in order to get in touch with me.</label>
+
+                </form> 
+    </div>
 
 </body>
+
+    <!--Global Footer-->
+    <footer>
+        <a href="policy.html">privacy policy</a>
+            <p>&copy; 2026 jen. All rights reserved.</p>
+                <a href="equipment.html">
+                    <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback">
+                </a>
+    </footer>
+
 </html>
