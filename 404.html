@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
+        integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
+        crossorigin="anonymous"></script>
+
     <title>error</title>
 </head>
 
 <body>
-    
+
     <!--Global Header & Navigation-->
     <header>
         <div class="grid-main">
-
-            <nav class="topnav">
-                <a href="index.html">
-                    <img src="assets/dlogo.svg" alt="logo of jen" id="logo-main">
-                </a>
-                <a href="about.html">about</a>
-                <a href="persona.html">persona</a>
-                <a href="music.html">music</a>
-                <a href="videos.html">videos</a>
-                <a href="lyrics.html">lyrics</a>
-                <a href="equipment.html">equipment</a>
-                <a href="contact.html">contact</a>
-            </nav>
-
+            <nav hx-get="components/header.html" hx-trigger="load"></nav>
             <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
         </div>
     </header>
@@ -41,4 +34,5 @@
     </footer>
 
 </body>
+
 </html>
