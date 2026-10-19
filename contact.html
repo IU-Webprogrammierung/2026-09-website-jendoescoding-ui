@@ -30,11 +30,11 @@
             <label for="yname">your name:</label><br>
             <input type="text" id="yname" name="yname"><br>
             <label for="lname">your message:</label><br>
-            <input type="text" id="lname" name="lname"><br><br>
+            <textarea></textarea><br>
 
             <input type="submit" value="Submit"><br>
 
-            <input type="radio" id="privacy" name="pol_privacy" value="JavaScript">
+            <input type="checkbox" id="privacy" name="pol_privacy" value="JavaScript">
             <label for="privacy">I’ve read the privacy policy and consent to my data being shared with jen in order to
                 get in touch with me.</label>
 
@@ -44,6 +44,7 @@
     <!--Global Footer-->
     <footer>
         <nav hx-get="components/footer.html" hx-trigger="load"></nav>
+
         <a href="equipment.html">
             <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
         <a href="policy.html">
