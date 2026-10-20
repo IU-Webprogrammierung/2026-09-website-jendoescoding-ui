@@ -116,3 +116,73 @@
 #sitting-jen {
   opacity: 0;
 }
+
+.grid-item-persona {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  font-size: 20px;
+  background-color: #A8B58A;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 50px;
+}
+
+.grid-item-new {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  font-size: 20px;
+  background-color: #A8B58A;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 50px;
+}
+
+.grid-item-videos {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  font-size: 20px;
+  background-color: #A8B58A;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 50px;
+}
+
+.grid-item-videos {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  font-size: 20px;
+  background-color: #A8B58A;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 50px;
+}
+
+.grid-item-lyrics_list {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  font-size: 20px;
+  background-color: #A8B58A;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 50px;
+}
+
+.grid-item-equipment {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  font-size: 20px;
+  background-color: #A8B58A;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 50px;
+}
+
+.grid-item-contact {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  font-size: 20px;
+  background-color: #A8B58A;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 50px;
+}

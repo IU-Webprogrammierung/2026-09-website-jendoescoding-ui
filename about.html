@@ -43,18 +43,21 @@
             <p>Yours, jen x</p>
         </div>
 
-        <img src="assets/sittingjen.png" alt="Jen sitting in frame" id="sitting-jen">
+        <!-- <img src="assets/sittingjen.png" alt="Jen sitting in frame" id="sitting-jen"> -->
 
 
         <!--Global Footer-->
 
         <footer class="grid-footer">
-            <nav hx-get="components/footer.html" hx-trigger="load"></nav>
+            <nav hx-get="components/footer.html" hx-trigger="load" hx-swap="outerHTML"></nav>
         </footer>
 
-        <div class="arrow-nav">
+        <div class="grid-arrow-back">
             <a href="policy.html">
                 <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
+        </div>
+
+        <div class="grid-arrow-forward">
             <a href="persona.html">
                 <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
         </div>
