@@ -23,6 +23,7 @@
         <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
 
         <!--Content of Page-->
+        
         <div class="grid-item-lyrics">
             <h1>良い人</h1>
             <p>uploaded on 29.04.2025</p>
@@ -91,13 +92,16 @@
         <!--Global Footer-->
 
         <footer class="grid-footer">
-            <nav hx-get="components/footer.html" hx-trigger="load"></nav>
+            <nav hx-get="components/footer.html" hx-trigger="load" hx-swap="outerHTML"></nav>
         </footer>
 
-        <div class="arrow-nav">
-            <a href="policy.html">
+        <div class="grid-arrow-back">
+            <a href="equipment.html">
                 <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
-            <a href="persona.html">
+        </div>
+
+        <div class="grid-arrow-forward">
+            <a href="policy.html">
                 <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
         </div>
 
