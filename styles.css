@@ -201,6 +201,10 @@
   overflow-y: auto;
 }
 
+.grid-item-lyrics p {
+  white-space: pre-line;
+}
+
 /* Menüpunkt: Equipment */
 
 .grid-item-equipment {
