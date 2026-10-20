@@ -1,12 +1,19 @@
 .grid-container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 200px 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
 #logo-main {
   width: 150px;
+}
+
+.grid-nav-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #hero-main {
@@ -17,23 +24,13 @@
   object-fit: cover;
 }
 
-.sidenav {
-  width: 200px;
-  height: auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-top: 35vh;
+.grid-nav {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
 }
 
-.sidenav>a:first-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.sidenav a {
+.grid-nav a {
   display: grid;
   font-size: 20px;
   background-color: transparent;
@@ -42,10 +39,16 @@
   padding: 20px 20px
 }
 
-.arrow-nav {
-  font-size: 16px;
-  grid-row: 3 / 4;
+.grid-arrow-back {
   grid-column: 2 / 4;
+  grid-row: 3 / 3;
+  align-self: end;
+}
+
+.grid-arrow-forward {
+  grid-column: 3 / 4;
+  grid-row: 3 / 3;
+  justify-items: end;
   align-self: end;
 }
 
