@@ -4,6 +4,22 @@ html, body {
   overflow: hidden;
 }
 
+/* Text */
+
+h1 {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 32;
+  font-style: normal;
+}
+
+p {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-style: normal;
+}
+
 .grid-container {
   height: 100vh;
   display: grid;
@@ -44,13 +60,17 @@ html, body {
   grid-row: 2;
 }
 
+
 .grid-nav a {
-  display: grid;
-  font-size: 20px;
-  background-color: transparent;
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-style: normal;
   text-decoration: none;
   color: black;
-  padding: 20px 20px
+
+  display: grid;
+  padding: 20px 20px;
 }
 
 /* Footer */
@@ -59,7 +79,28 @@ html, body {
   grid-column: 1;
   grid-row: 3;
   padding: 20px 20px;
+
   align-self: end;
+
+  letter-spacing: 0.05em;
+}
+
+.grid-footer a {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+.grid-footer p {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 10px;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
 }
 
 /* Arrow Navigation */
@@ -93,7 +134,13 @@ html, body {
 }
 
 .dropdown-content a {
-  font-size: 20px;
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+
   padding: 10px 50px;
   opacity: 0;
   transform: translateY(-8px);
@@ -132,13 +179,6 @@ html, body {
   text-decoration: none;
   color: #2D2C2A;
   padding: 20px 50px;
-
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 350;
-  font-style: normal;
-  font-variation-settings:
-  "wdth" 100;
 }
 
 #sitting-jen {
