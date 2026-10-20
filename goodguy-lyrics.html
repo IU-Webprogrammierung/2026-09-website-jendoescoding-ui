@@ -15,89 +15,96 @@
 
 <body>
 
-    <!--Global Header & Navigation-->
-    <header>
-        <div class="grid-main">
-            <nav hx-get="components/header.html" hx-trigger="load"></nav>
-            <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+    <div class="grid-container">
+
+        <!--Global Navigation & Hero Image-->
+
+        <header>
+            <div hx-get="components/header.html" hx-trigger="load"></div>
+        </header>
+
+        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+
+        <!--Content of Page-->
+        <div class="grid-item-lyrics">
+            <h1>良い人</h1>
+            <p>uploaded on 29.04.2025</p>
+            <p>Life’s all but loving and to be loved<br>
+                And yet it fills me up with disgust<br>
+                My feelings surround me, swirling around<br>
+                Not want to see, don’t want to hear -<br>
+                Not if they’re unclear to me</p>
+
+            <p>All these friendships, they’re too much to keep up<br>
+                Insincerity and falseness<br>
+                Such a nuisance and so noisy at times<br>
+                With a grasp that’s holding too tight</p>
+
+            <p>Making a mess, there’s no saving from this<br>
+                I scream, with no one near<br>
+                But I, yet I<br>
+                Hope that this side won’t see the day light</p>
+
+            <p>Don’t you make fun of me</p>
+
+            <p>I'm such a great guy!<br>
+                Never dissatisfied!<br>
+                This act’s so boring, but it’s all good - so good!<br>
+                Just stop your crying, there’s no denying<br>
+                That I’m thankful for all you put me through</p>
+
+            <p>My so called “image”’s close to crumbling<br>
+                I’ve truly had enough, can’t stand it<br>
+                Trust me, you’re not the one at fault here<br>
+                I won’t know and can’t know<br>
+                When you finally get a hint</p>
+
+            <p>Boiling within, only thought to give in<br>
+                I don’t know where my heads been<br>
+                One raging impulse, searching conflict instead<br>
+                Who’s able to control this? </p>
+
+            <p>Everything’s but facade, at best fake<br>
+                Punching through, to destroy it<br>
+                Don’t tempt me, deceive me<br>
+                No one can stop this rage within me<br>
+                Don’t you make fun of me</p>
+
+            <p>Can’t say what I’ve endured,<br>
+                don’t want to run and hide<br>
+                I won’t be tossed aside so that others may be satisfied</p>
+
+            <p>So dizzy, can’t see straight,<br>
+                gonna throw up - not a bait.<br>
+                Look here! Look here!<br>
+                What’s wrong with how I act?</p>
+
+            <p>I'm such a great guy! Never dissatisfied!<br>
+                This act’s so boring, but it’s all good - so good!<br>
+                Just stop your crying, there’s no denying<br>
+                That I’m thankful for all you put me through</p>
+
+            <p>Can’t say what I’ve endured,<br>
+                don’t want to run and hide<br>
+                I won’t be tossed aside so that others may be satisfied<br>
+                Gonna throw up all in one, gonna throw up all in one<br>
+                Ahhh.</p>
         </div>
-    </header>
 
-    <!--Page Content-->
-    <main>
-        <h1>良い人</h1>
-        <p>uploaded on 29.04.2025</p>
-        <p>Life’s all but loving and to be loved<br>
-            And yet it fills me up with disgust<br>
-            My feelings surround me, swirling around<br>
-            Not want to see, don’t want to hear -<br>
-            Not if they’re unclear to me</p>
+        <!--Global Footer-->
 
-        <p>All these friendships, they’re too much to keep up<br>
-            Insincerity and falseness<br>
-            Such a nuisance and so noisy at times<br>
-            With a grasp that’s holding too tight</p>
+        <footer class="grid-footer">
+            <nav hx-get="components/footer.html" hx-trigger="load"></nav>
+        </footer>
 
-        <p>Making a mess, there’s no saving from this<br>
-            I scream, with no one near<br>
-            But I, yet I<br>
-            Hope that this side won’t see the day light</p>
+        <div class="arrow-nav">
+            <a href="policy.html">
+                <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
+            <a href="persona.html">
+                <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
+        </div>
 
-        <p>Don’t you make fun of me</p>
-
-        <p>I'm such a great guy!<br>
-            Never dissatisfied!<br>
-            This act’s so boring, but it’s all good - so good!<br>
-            Just stop your crying, there’s no denying<br>
-            That I’m thankful for all you put me through</p>
-
-        <p>My so called “image”’s close to crumbling<br>
-            I’ve truly had enough, can’t stand it<br>
-            Trust me, you’re not the one at fault here<br>
-            I won’t know and can’t know<br>
-            When you finally get a hint</p>
-
-        <p>Boiling within, only thought to give in<br>
-            I don’t know where my heads been<br>
-            One raging impulse, searching conflict instead<br>
-            Who’s able to control this? </p>
-
-        <p>Everything’s but facade, at best fake<br>
-            Punching through, to destroy it<br>
-            Don’t tempt me, deceive me<br>
-            No one can stop this rage within me<br>
-            Don’t you make fun of me</p>
-
-        <p>Can’t say what I’ve endured,<br>
-            don’t want to run and hide<br>
-            I won’t be tossed aside so that others may be satisfied</p>
-
-        <p>So dizzy, can’t see straight,<br>
-            gonna throw up - not a bait.<br>
-            Look here! Look here!<br>
-            What’s wrong with how I act?</p>
-
-        <p>I'm such a great guy! Never dissatisfied!<br>
-            This act’s so boring, but it’s all good - so good!<br>
-            Just stop your crying, there’s no denying<br>
-            That I’m thankful for all you put me through</p>
-
-        <p>Can’t say what I’ve endured,<br>
-            don’t want to run and hide<br>
-            I won’t be tossed aside so that others may be satisfied<br>
-            Gonna throw up all in one, gonna throw up all in one<br>
-            Ahhh.</p>
-    </main>
-
-    <!--Global Footer-->
-    <footer>
-        <nav hx-get="components/footer.html" hx-trigger="load"></nav>
-
-        <a href="music.html">
-            <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
-        <a href="lyrics.html">
-            <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
-    </footer>
+    </div>
 
 </body>
 

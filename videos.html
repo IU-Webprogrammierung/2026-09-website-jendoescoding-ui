@@ -15,44 +15,51 @@
 
 <body>
 
-    <!--Global Header & Navigation-->
-    <header>
-        <div class="grid-main">
-            <nav hx-get="components/header.html" hx-trigger="load"></nav>
-            <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+    <div class="grid-container">
+
+        <!--Global Navigation & Hero Image-->
+
+        <header>
+            <div hx-get="components/header.html" hx-trigger="load"></div>
+        </header>
+
+        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+
+        <!--Content of Page-->
+        <div class="grid-item-persona">
+
+            <h1>videos</h1>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/NBbfL5Ni-UI">
+            </iframe>
+            <h2>Through the Darkness (Resident Evil Requiem)</h2>
+            <p>role: vocalist, arranger and producer</p>
+
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/zGUbGu3o45k">
+            </iframe>
+            <h2>SQUARE UP (Jamie Paige & Peak Divide)</h2>
+            <p>role: vocalist</p>
+
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/vOovxRfJs6M">
+            </iframe>
+            <h2>Log Off</h2>
+            <p>role: vocalist</p>
+
         </div>
-    </header>
 
-    <!--Page Content-->
-    <main>
+        <!--Global Footer-->
 
-        <h1>videos</h1>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/NBbfL5Ni-UI">
-        </iframe>
-        <h2>Through the Darkness (Resident Evil Requiem)</h2>
-        <p>role: vocalist, arranger and producer</p>
+        <footer class="grid-footer">
+            <nav hx-get="components/footer.html" hx-trigger="load"></nav>
+        </footer>
 
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/zGUbGu3o45k">
-        </iframe>
-        <h2>SQUARE UP (Jamie Paige & Peak Divide)</h2>
-        <p>role: vocalist</p>
+        <div class="arrow-nav">
+            <a href="policy.html">
+                <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
+            <a href="persona.html">
+                <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
+        </div>
 
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/vOovxRfJs6M">
-        </iframe>
-        <h2>Log Off</h2>
-        <p>role: vocalist</p>
-
-    </main>
-
-    <!--Global Footer-->
-    <footer>
-        <nav hx-get="components/footer.html" hx-trigger="load"></nav>
-
-        <a href="music.html">
-            <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
-        <a href="lyrics.html">
-            <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
-    </footer>
+    </div>
 
 </body>
 

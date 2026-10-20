@@ -15,42 +15,50 @@
 
 <body>
 
-    <!--Global Header & Navigation-->
-    <header>
-        <div class="grid-main">
-            <nav hx-get="components/header.html" hx-trigger="load"></nav>
-            <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+    <div class="grid-container">
+
+        <!--Global Navigation & Hero Image-->
+
+        <header>
+            <div hx-get="components/header.html" hx-trigger="load"></div>
+        </header>
+
+        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+
+        <!--Page Content-->
+
+        <div class="grid-item-equipment">
+            <h1>equipment</h1>
+            <h2>Instruments</h2>
+            <ul>
+                <li>Keyboard: Nektar Impact GX61</li>
+                <li>Ukulele: Fender SMC-21</li>
+                <li>Acoustic Guitar: Fender CD-60 BK-DS-V2</li>
+            </ul>
+
+            <h2>recording</h2>
+            <ul>
+                <li>Microphone for Vocal Recording: FAME Studio CU2</li>
+                <li>Microphone for Instrumental Recording: ZOOM H1n Handy Recorder</li>
+                <li>Mixing & Recording: FL Studio 21</li>
+                <li>Editing: Final Cut Pro, Pixelmator Pro</li>
+            </ul>
         </div>
-    </header>
 
-    <!--Page Content-->
-    <main>
-        <h1>equipment</h1>
-        <h2>Instruments</h2>
-        <ul>
-            <li>Keyboard: Nektar Impact GX61</li>
-            <li>Ukulele: Fender SMC-21</li>
-            <li>Acoustic Guitar: Fender CD-60 BK-DS-V2</li>
-        </ul>
+        <!--Global Footer-->
 
-        <h2>recording</h2>
-        <ul>
-            <li>Microphone for Vocal Recording: FAME Studio CU2</li>
-            <li>Microphone for Instrumental Recording: ZOOM H1n Handy Recorder</li>
-            <li>Mixing & Recording: FL Studio 21</li>
-            <li>Editing: Final Cut Pro, Pixelmator Pro</li>
-        </ul>
-    </main>
+        <footer class="grid-footer">
+            <nav hx-get="components/footer.html" hx-trigger="load"></nav>
+        </footer>
 
-    <!--Global Footer-->
-    <footer>
-        <nav hx-get="components/footer.html" hx-trigger="load"></nav>
-        
-        <a href="lyrics.html">
-            <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
-        <a href="contact.html">
-            <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
-    </footer>
+        <div class="arrow-nav">
+            <a href="policy.html">
+                <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
+            <a href="persona.html">
+                <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
+        </div>
+
+    </div>
 
 </body>
 

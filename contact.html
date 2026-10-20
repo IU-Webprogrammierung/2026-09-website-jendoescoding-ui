@@ -15,41 +15,51 @@
 
 <body>
 
-    <!--Global Header & Navigation-->
-    <header>
-        <div class="grid-main">
-            <nav hx-get="components/header.html" hx-trigger="load"></nav>
-            <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+    <div class="grid-container">
+
+        <!--Global Navigation & Hero Image-->
+
+        <header>
+            <div hx-get="components/header.html" hx-trigger="load"></div>
+        </header>
+
+        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+
+
+        <!--Content of Page-->
+
+        <div class="grid-item-contact">
+            <h1>get in touch!</h1>
+            <form action="/action_page.php">
+                <label for="yname">your name:</label><br>
+                <input type="text" id="yname" name="yname"><br>
+                <label for="lname">your message:</label><br>
+                <textarea></textarea><br>
+
+                <input type="submit" value="Submit"><br>
+
+                <input type="checkbox" id="privacy" name="pol_privacy" value="JavaScript">
+                <label for="privacy">I’ve read the privacy policy and consent to my data being shared with jen in order
+                    to
+                    get in touch with me.</label>
+
+            </form>
         </div>
-    </header>
 
-    <!--Page Content-->
-    <div class="contact-container">
-        <h1>get in touch!</h1>
-        <form action="/action_page.php">
-            <label for="yname">your name:</label><br>
-            <input type="text" id="yname" name="yname"><br>
-            <label for="lname">your message:</label><br>
-            <textarea></textarea><br>
+        <!--Global Footer-->
 
-            <input type="submit" value="Submit"><br>
+        <footer class="grid-footer">
+            <nav hx-get="components/footer.html" hx-trigger="load"></nav>
+        </footer>
 
-            <input type="checkbox" id="privacy" name="pol_privacy" value="JavaScript">
-            <label for="privacy">I’ve read the privacy policy and consent to my data being shared with jen in order to
-                get in touch with me.</label>
+        <div class="arrow-nav">
+            <a href="policy.html">
+                <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
+            <a href="persona.html">
+                <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
+        </div>
 
-        </form>
     </div>
-
-    <!--Global Footer-->
-    <footer>
-        <nav hx-get="components/footer.html" hx-trigger="load"></nav>
-
-        <a href="equipment.html">
-            <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
-        <a href="policy.html">
-            <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
-    </footer>
 
 </body>
 

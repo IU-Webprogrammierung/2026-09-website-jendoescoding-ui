@@ -15,30 +15,37 @@
 
 <body>
 
-    <!--Global Header & Navigation-->
-    <header>
-        <div class="grid-main">
-            <nav hx-get="components/header.html" hx-trigger="load"></nav>
-            <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+    <div class="grid-container">
+
+        <!--Global Navigation & Hero Image-->
+
+        <header>
+            <div hx-get="components/header.html" hx-trigger="load"></div>
+        </header>
+
+        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+
+        <!--Content of Page-->
+        <div class="grid-item-new">
+            <h1>newest cover</h1>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/usfW7LK3tsc">
+            </iframe>
         </div>
-    </header>
 
-    <!--Page Content-->
-    <main>
-        <h1>newest cover</h1>
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/usfW7LK3tsc">
-        </iframe>
-    </main>
+        <!--Global Footer-->
 
-    <!--Global Footer-->
-    <footer>
-        <nav hx-get="components/footer.html" hx-trigger="load"></nav>
-        
-        <a href="persona.html">
-            <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
-        <a href="videos.html">
-            <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
-    </footer>
+        <footer class="grid-footer">
+            <nav hx-get="components/footer.html" hx-trigger="load"></nav>
+        </footer>
+
+        <div class="arrow-nav">
+            <a href="policy.html">
+                <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
+            <a href="persona.html">
+                <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
+        </div>
+
+    </div>
 
 </body>
 

@@ -15,41 +15,48 @@
 
 <body>
 
-    <!--Global Header & Navigation-->
-    <header>
-        <div class="grid-main">
-            <nav hx-get="components/header.html" hx-trigger="load"></nav>
-            <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+    <div class="grid-container">
+
+        <!--Global Navigation & Hero Image-->
+
+        <header>
+            <div hx-get="components/header.html" hx-trigger="load"></div>
+        </header>
+
+        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+
+        <!--Content of Page-->
+        <div class="grid-item-lyrics_list">
+            <h1>lyrics</h1>
+            <ul>
+                <li><a href="goodguy-lyrics.html">良い人</a></li>
+                <li><a href="404.html">Bow and Arrow</a></li>
+                <li><a href="404.html">Idol</a></li>
+                <li><a href="404.html">Los! Los! Los!</a></li>
+                <li><a href="404.html">4:00 am</a></li>
+                <li><a href="404.html">Akuma No Ko</a></li>
+                <li><a href="404.html">Dead Or Lie!</a></li>
+                <li><a href="404.html">Deal With The Devil</a></li>
+                <li><a href="404.html">Love Dramatic</a></li>
+                <li><a href="404.html">On My MinD</a></li>
+                <li><a href="404.html">Caste Room</a></li>
+            </ul>
         </div>
-    </header>
 
-    <!--Page Content-->
-    <main>
-        <h1>lyrics</h1>
-        <ul>
-            <li><a href="goodguy-lyrics.html">良い人</a></li>
-            <li><a href="404.html">Bow and Arrow</a></li>
-            <li><a href="404.html">Idol</a></li>
-            <li><a href="404.html">Los! Los! Los!</a></li>
-            <li><a href="404.html">4:00 am</a></li>
-            <li><a href="404.html">Akuma No Ko</a></li>
-            <li><a href="404.html">Dead Or Lie!</a></li>
-            <li><a href="404.html">Deal With The Devil</a></li>
-            <li><a href="404.html">Love Dramatic</a></li>
-            <li><a href="404.html">On My MinD</a></li>
-            <li><a href="404.html">Caste Room</a></li>
-        </ul>
-    </main>
+        <!--Global Footer-->
 
-    <!--Global Footer-->
-    <footer>
-        <nav hx-get="components/footer.html" hx-trigger="load"></nav>
-        
-        <a href="videos.html">
-            <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
-        <a href="equipment.html">
-            <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
-    </footer>
+        <footer class="grid-footer">
+            <nav hx-get="components/footer.html" hx-trigger="load"></nav>
+        </footer>
+
+        <div class="arrow-nav">
+            <a href="policy.html">
+                <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
+            <a href="persona.html">
+                <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
+        </div>
+
+    </div>
 
 </body>
 

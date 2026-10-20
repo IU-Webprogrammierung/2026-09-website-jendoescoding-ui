@@ -15,44 +15,54 @@
 
 <body>
 
-    <!--Global Header & Navigation-->
-    <header>
-        <div class="grid-main">
-            <nav hx-get="components/header.html" hx-trigger="load"></nav>
-            <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
-        </div>
-    </header>
+    <div class="grid-container">
 
-    <!--Page Content-->
-    <main>
+        <!--Global Navigation & Hero Image-->
+
+        <header>
+            <div hx-get="components/header.html" hx-trigger="load"></div>
+        </header>
+
+        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+
+
+        <!--Content of Page-->
+
+        <div class="grid-item-about">
+            <h1>about me</h1>
+            <p>I’m a singer, lyricist and producer based in Germany.
+                My journey as a vocalist started over more than a decade ago in 2013.
+                At that time I was knee deep into anime, vocaloid and a dream:
+                to understand what my favorite songs were about with little to no english comprehension.
+                With that in mind, my 14 year old self dedicated her free time to writing,
+                recording, mixing and sharing creativity with the world.</p>
+
+            <p>Fast forward to now, I’ve created over 200 covers, collaborated with people
+                I’ve never thought I’d collaborate with and reached over 84 million people
+                with my music; and I have no means of stopping.</p>
+
+            <p>I can’t wait for what the futures holds and thank you immensly for being part of this journey.</p>
+            <p>As always, with lots of love,</p>
+            <p>Yours, jen x</p>
+        </div>
+
         <img src="assets/sittingjen.png" alt="Jen sitting in frame" id="sitting-jen">
 
-        <h1>about me</h1>
-        <p>I’m a singer, lyricist and producer based in Germany.
-            My journey as a vocalist started over more than a decade ago in 2013.
-            At that time I was knee deep into anime, vocaloid and a dream:
-            to understand what my favorite songs were about with little to no english comprehension.
-            With that in mind, my 14 year old self dedicated her free time to writing,
-            recording, mixing and sharing creativity with the world.</p>
 
-        <p>Fast forward to now, I’ve created over 200 covers, collaborated with people
-            I’ve never thought I’d collaborate with and reached over 84 million people
-            with my music; and I have no means of stopping.</p>
+        <!--Global Footer-->
 
-        <p>I can’t wait for what the futures holds and thank you immensly for being part of this journey.</p>
-        <p>As always, with lots of love,</p>
-        <p>Yours, jen x</p>
-    </main>
+        <footer class="grid-footer">
+            <nav hx-get="components/footer.html" hx-trigger="load"></nav>
+        </footer>
 
-    <!--Global Footer-->
-    <footer>
-        <nav hx-get="components/footer.html" hx-trigger="load"></nav>
-        
-        <a href="music.html">
-            <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
-        <a href="lyrics.html">
-            <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
-    </footer>
+        <div class="arrow-nav">
+            <a href="policy.html">
+                <img src="assets/arrowback.svg" alt="Arrow back" id="arrowback"></a>
+            <a href="persona.html">
+                <img src="assets/arrowforward.svg" alt="Arrow forward" id="arrowforward"></a>
+        </div>
+
+    </div>
 
 </body>
 
