@@ -168,7 +168,7 @@
 }
 
 
-/* Menüpunkt: Lyrics */
+/* Menüpunkt: Lyrics (List) */
 
 .grid-item-lyrics_list {
   grid-column: 2 / 4;
@@ -184,6 +184,10 @@
   text-transform: uppercase;
 }
 
+#four-am {
+  text-transform: uppercase;
+}
+
 /* Menüpunkt: Equipment */
 
 .grid-item-equipment {
@@ -196,7 +200,7 @@
   padding: 20px 50px;
 }
 
-/* Menüpunkt: Contakt */
+/* Menüpunkt: Contact */
 
 .grid-item-contact {
   grid-column: 2 / 4;
