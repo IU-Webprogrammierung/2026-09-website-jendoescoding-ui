@@ -132,6 +132,13 @@ html, body {
   text-decoration: none;
   color: #2D2C2A;
   padding: 20px 50px;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
 }
 
 #sitting-jen {
