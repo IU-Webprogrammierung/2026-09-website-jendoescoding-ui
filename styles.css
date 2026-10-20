@@ -5,6 +5,8 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+/* Logo */
+
 .grid-nav-logo {
   grid-column: 1;
   grid-row: 1;
@@ -17,6 +19,8 @@
   display: block;
 }
 
+/* Hero-Image (Backing) */
+
 #hero-main {
   grid-column: 2 / 4;
   grid-row: 1 / 4;
@@ -24,6 +28,8 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Navigation */
 
 .grid-nav {
   padding-top: 5vh;
@@ -40,6 +46,17 @@
   padding: 20px 20px
 }
 
+/* Footer */
+
+.grid-footer {
+  grid-column: 1;
+  grid-row: 3;
+  padding: 20px 20px;
+  align-self: end;
+}
+
+/* Arrow Navigation */
+
 .grid-arrow-back {
   padding: 20px;
   grid-column: 2;
@@ -55,12 +72,7 @@
   align-self: end;
 }
 
-.grid-footer {
-  grid-column: 1;
-  grid-row: 3;
-  padding: 20px 20px;
-  align-self: end;
-}
+/* Dropdown */
 
 .dropdown {
   position: relative;
@@ -103,6 +115,8 @@
   transition-delay: 0.40s;
 }
 
+/* Menüpunkt: About */
+
 .grid-item-about {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
@@ -117,6 +131,8 @@
   opacity: 0;
 }
 
+/* Menüpunkt: Persona */
+
 .grid-item-persona {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
@@ -126,6 +142,8 @@
   color: rgb(255, 255, 255);
   padding: 20px 50px;
 }
+
+/* Menüpunkt: Music */
 
 .grid-item-new {
   grid-column: 2 / 4;
@@ -137,15 +155,7 @@
   padding: 20px 50px;
 }
 
-.grid-item-videos {
-  grid-column: 2 / 4;
-  grid-row: 2 / 4;
-  font-size: 20px;
-  background-color: #A8B58A;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding: 20px 50px;
-}
+/* Menüpunkt: Videos */
 
 .grid-item-videos {
   grid-column: 2 / 4;
@@ -156,6 +166,9 @@
   color: rgb(255, 255, 255);
   padding: 20px 50px;
 }
+
+
+/* Menüpunkt: Lyrics */
 
 .grid-item-lyrics_list {
   grid-column: 2 / 4;
@@ -167,6 +180,12 @@
   padding: 20px 50px;
 }
 
+#lyrics-idol {
+  text-transform: uppercase;
+}
+
+/* Menüpunkt: Equipment */
+
 .grid-item-equipment {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
@@ -176,6 +195,8 @@
   color: rgb(255, 255, 255);
   padding: 20px 50px;
 }
+
+/* Menüpunkt: Contakt */
 
 .grid-item-contact {
   grid-column: 2 / 4;
