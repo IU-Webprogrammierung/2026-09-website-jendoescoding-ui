@@ -5,15 +5,16 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-#logo-main {
-  width: 150px;
+.grid-nav-logo {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 20px 20px;
+  position: absolute;
 }
 
-.grid-nav-logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+#logo-main {
+  width: 150px;
+  display: block;
 }
 
 #hero-main {
@@ -25,9 +26,9 @@
 }
 
 .grid-nav {
+  padding-top: 5vh;
   grid-column: 1;
   grid-row: 2;
-  align-self: center;
 }
 
 .grid-nav a {
@@ -40,33 +41,29 @@
 }
 
 .grid-arrow-back {
-  grid-column: 2 / 4;
-  grid-row: 3 / 3;
+  padding: 20px;
+  grid-column: 2;
+  grid-row: 3;
   align-self: end;
 }
 
 .grid-arrow-forward {
-  grid-column: 3 / 4;
-  grid-row: 3 / 3;
-  justify-items: end;
+  padding: 20px;
+  grid-column: 3;
+  grid-row: 3;
+  justify-self: end;
   align-self: end;
 }
 
 .grid-footer {
   grid-column: 1;
-  grid-row: 3/3;
+  grid-row: 3;
+  padding: 20px 20px;
   align-self: end;
-  z-index: 1;
 }
 
-.about-text {
-  position: absolute;
-  top: 22%;
-  font-size: 20px;
-  background-color: #A8B58A;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding: 20px 50px;
+.dropdown {
+  position: relative;
 }
 
 .dropdown-content {
@@ -106,4 +103,16 @@
   transition-delay: 0.40s;
 }
 
-.main {}
+.grid-item-about {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  font-size: 20px;
+  background-color: #A8B58A;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 50px;
+}
+
+#sitting-jen {
+  opacity: 0;
+}
