@@ -122,14 +122,20 @@
   grid-column: 2 / 4;
   grid-row: 2 / 4;
   font-size: 20px;
-  background-color: #A8B58A;
+  background-color: #E5DED5;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #2D2C2A;
   padding: 20px 50px;
 }
 
 #sitting-jen {
-  opacity: 0;
+  grid-column: 3;
+  grid-row: 1;
+  padding: 20px;
+  transform: translateY(80px);
+  width: 200px;
+  justify-self: end;
+  align-self: end;
 }
 
 /* Menüpunkt: Persona */
@@ -215,7 +221,7 @@
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 20px 50px;
-}
+} 
 
 /* Menüpunkt: Contact */
 
