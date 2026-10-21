@@ -10,7 +10,7 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("bird-toggle");
     const audio = document.getElementById("bird-audio");
-    if (!btn || !audio) return;   // auf anderen Seiten nichts tun
+    if (!btn || !audio) return;
 
     btn.addEventListener("click", () => {
         if (audio.paused) {
@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     audio.addEventListener("play", () => {
         btn.textContent = "❚❚";
-        btn.setAttribute("aria-label", "Vogelgesang pausieren");
+        btn.setAttribute("aria-label", "Play ambient bird sounds");
         btn.classList.add("is-playing");
     });
 
     audio.addEventListener("pause", () => {
         btn.textContent = "▶";
-        btn.setAttribute("aria-label", "Vogelgesang abspielen");
+        btn.setAttribute("aria-label", "Stop ambient bird sounds");
         btn.classList.remove("is-playing");
     });
 });
