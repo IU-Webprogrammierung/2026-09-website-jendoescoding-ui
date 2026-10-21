@@ -8,6 +8,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/pages/music.css">
 
     <!--HTMX-->
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
@@ -33,12 +34,13 @@
         <!--Global Navigation & Hero Image-->
 
         <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
-        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+        
+        <div class="hero-frame"><img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-about"></div>
 
         <!--Content of Page-->
         <div class="grid-item-new">
-            <h1>newest cover</h1>
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/usfW7LK3tsc">
+            <h1>newest music</h1>
+            <iframe width="900" height="500" src="https://www.youtube.com/embed/usfW7LK3tsc">
             </iframe>
         </div>
 
