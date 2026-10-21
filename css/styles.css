@@ -44,7 +44,6 @@ html, body {
   grid-row: 2;
 }
 
-
 .grid-nav a {
   font-family: "Google Sans Flex", sans-serif;
   font-optical-sizing: auto;
@@ -55,36 +54,6 @@ html, body {
 
   display: grid;
   padding: 20px 20px;
-}
-
-/* Footer */
-
-.grid-footer {
-  grid-column: 1;
-  grid-row: 3;
-  padding: 20px 20px;
-
-  align-self: end;
-
-  letter-spacing: 0.05em;
-}
-
-.grid-footer a {
-  font-family: "Google Sans Flex", sans-serif;
-  font-optical-sizing: auto;
-  font-size: 16px;
-  font-style: normal;
-  text-decoration: none;
-  color: black;
-}
-
-.grid-footer p {
-  font-family: "Google Sans Flex", sans-serif;
-  font-optical-sizing: auto;
-  font-size: 10px;
-  font-style: normal;
-  text-decoration: none;
-  color: black;
 }
 
 /* Arrow Navigation */

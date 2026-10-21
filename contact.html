@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/css-components/typography.css">
+    <link rel="stylesheet" href="css/css-components/footer.css"> 
 
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
         integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
@@ -28,7 +29,7 @@
 
         <!--Global Navigation & Hero Image-->
 
-        <div hx-get="components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
+        <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
         <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
 
 
@@ -55,7 +56,7 @@
         <!--Global Footer-->
 
         <footer class="grid-footer">
-            <nav hx-get="components/footer.html" hx-trigger="load" hx-swap="outerHTML"></nav>
+            <nav hx-get="htmx-components/footer.html" hx-trigger="load" hx-swap="outerHTML"></nav>
         </footer>
 
         <div class="grid-arrow-back">
