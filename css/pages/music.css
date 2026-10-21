@@ -10,14 +10,14 @@
     color: rgb(255, 255, 255);
     padding: 20px 50px;
 
-    display: flex;
-    justify-content: center;
+    align-self: center;
+    justify-self: center;
 }
 
 .grid-item-new h1 {
-    justify-self: end;
-    align-self: end;
+    justify-self: center;
 }
+
 
 .hero-frame {
     grid-column: 2 / 4;
