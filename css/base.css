@@ -7,7 +7,10 @@ h1 {
   font-style: normal;
 }
 
-p, h3, ul, li {
+p,
+h3,
+ul,
+li {
   font-family: "Google Sans Flex", sans-serif;
   font-optical-sizing: auto;
   font-size: 16px;
@@ -20,15 +23,13 @@ p, h3, ul, li {
 html, body {
   margin: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 .grid-container {
   height: 100vh;
   display: grid;
   grid-template-columns: 200px 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  overflow: hidden;  
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 
@@ -79,6 +80,12 @@ html, body {
 }
 
 /* Arrow Navigation */
+
+.grid-arrow-back,
+.grid-arrow-forward {
+  position: relative;
+  z-index: 5;
+}
 
 .grid-arrow-back {
   padding: 20px;
