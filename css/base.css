@@ -1,3 +1,21 @@
+/* Typography */
+
+h1 {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 32;
+  font-style: normal;
+}
+
+p, h3, ul, li {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-style: normal;
+}
+
+
+
 /* Side-Navigation */
 
 .grid-nav {
@@ -82,4 +100,35 @@
 .dropdown:hover .dropdown-content a:nth-child(2),
 .dropdown:focus-within .dropdown-content a:nth-child(2) {
   transition-delay: 0.40s;
+}
+
+
+/* Footer */
+
+.grid-footer {
+  grid-column: 1;
+  grid-row: 3;
+  padding: 20px 20px;
+
+  align-self: end;
+
+  letter-spacing: 0.05em;
+}
+
+.grid-footer a {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+.grid-footer p {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 10px;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
 }
