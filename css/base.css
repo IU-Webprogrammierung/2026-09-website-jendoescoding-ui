@@ -15,6 +15,48 @@ p, h3, ul, li {
 }
 
 
+/* Body + Grid */
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow: hidden;  
+}
+
+
+/* Logo */
+
+.grid-nav-logo {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 20px 20px;
+  position: absolute;
+}
+
+#logo-main {
+  width: 150px;
+  display: block;
+}
+
+
+/* Hero-Image (Backing) */
+
+#hero-main {
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 /* Side-Navigation */
 
