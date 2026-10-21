@@ -1,3 +1,17 @@
+/* Color Palette */
+
+:root {
+
+  --bg: #fcfdf2;
+  --surface: #ffffff;
+  --text: #2D2C2A;
+  --accent: #A8B58A;
+  --accent-text: #ffffff;
+  --link: #2D2C2A;
+  --overlay: rgba(255, 255, 255, 0.85);
+}
+
+
 /* Typography */
 
 h1 {
@@ -8,6 +22,7 @@ h1 {
 }
 
 p,
+h2,
 h3,
 ul,
 li {
@@ -20,9 +35,12 @@ li {
 
 /* Body + Grid */
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .grid-container {
@@ -73,7 +91,7 @@ html, body {
   font-size: 16px;
   font-style: normal;
   text-decoration: none;
-  color: black;
+  color: var(--text);
 
   display: grid;
   padding: 20px 20px;
@@ -121,7 +139,7 @@ html, body {
   font-size: 16px;
   font-style: normal;
   text-decoration: none;
-  color: black;
+  color: var(--text);
 
   padding: 10px 50px;
   opacity: 0;
@@ -170,7 +188,7 @@ html, body {
   font-size: 16px;
   font-style: normal;
   text-decoration: none;
-  color: black;
+  color: var(--text);
 }
 
 .grid-footer p {
@@ -179,7 +197,8 @@ html, body {
   font-size: 10px;
   font-style: normal;
   text-decoration: none;
-  color: black;
+  color: var(--text);
+
 }
 
 /* Button */
@@ -191,13 +210,13 @@ html, body {
   align-self: start;
   z-index: 5;
 
-  margin: 20px;
+  margin: 40px;
   width: 48px;
   height: 48px;
   border: none;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.85);
-  color: #2D2C2A;
+  background: var(--bg);
+  color: var(--text);
   font-size: 18px;
   cursor: pointer;
   transition: transform 0.2s;
@@ -220,9 +239,11 @@ html, body {
   0% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
   }
+
   70% {
     box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
