@@ -4,21 +4,28 @@
     grid-column: 2 / 4;
     grid-row: 2;
 
-    font-size: 20px;
-    text-decoration: none;
-
-    position: relative;
-    align-self: center;
-    justify-self: center;
+    justify-self: stretch;
+    min-width: 0;
+    padding: 0 16px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .video-frame {
-    grid-column: 2 / 4;
-    grid-row: 2;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.video-frame iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
 }
 
 .grid-item-new h1 {
-    color: var(--text);
+    color: var(--accent-text);
     justify-self: center;
 }
 
