@@ -49,3 +49,8 @@
     height: auto;
     border: 0;
 }
+
+#square-up,
+#log-off {
+    text-transform: uppercase;
+}
