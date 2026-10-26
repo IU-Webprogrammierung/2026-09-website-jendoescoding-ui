@@ -1,11 +1,51 @@
 /* Menüpunkt: Videos */
 
-.grid-item-videos {
-  grid-column: 2 / 4;
-  grid-row: 2 / 4;
-  font-size: 20px;
-  background-color: var(--bg);
-  text-decoration: none;
-  color: var(--text);
-  padding: 20px 50px;
+.grid-container h1,
+.grid-container h2,
+.grid-container p {
+    color: var(--accent-text);
+    line-height: 0.5;
+}
+
+.video-frame-1 {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+}
+
+.video-frame-2 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.video-frame-3 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.grid-item-video {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    align-self: end;
+}
+
+.video-frame-1,
+.video-frame-2,
+.video-frame-3 {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    max-width: 420px;
+    min-width: 0;
+    text-align: center;
+}
+
+.video-frame-1 iframe,
+.video-frame-2 iframe,
+.video-frame-3 iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
 }
