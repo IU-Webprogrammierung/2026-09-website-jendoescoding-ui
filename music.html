@@ -34,14 +34,19 @@
         <!--Global Navigation & Hero Image-->
 
         <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
-        
-        <div class="hero-frame"><img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-about"></div>
+
+        <div class="hero-video">
+            <video id="hero-video" autoplay muted loop playsinline>
+                <source src="assets/WATCHME_asset.mp4" type="video/mp4">
+            </video>
+        </div>
 
         <!--Content of Page-->
         <div class="grid-item-new">
             <h1>newest music</h1>
-            <iframe width="900" height="500" src="https://www.youtube.com/embed/usfW7LK3tsc">
-            </iframe>
+            <div class="video-frame">
+                <iframe src="https://www.youtube.com/embed/KiRFnZNfHRg"></iframe>
+            </div>
         </div>
 
         <!--Global Footer-->

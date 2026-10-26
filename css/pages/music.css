@@ -3,33 +3,38 @@
 .grid-item-new {
     grid-column: 2 / 4;
     grid-row: 2;
-    position: relative;
 
     font-size: 20px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 20px 50px;
 
+    position: relative;
     align-self: center;
     justify-self: center;
 }
 
+.video-frame {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
 .grid-item-new h1 {
+    color: var(--text);
     justify-self: center;
 }
 
 
-.hero-frame {
+.hero-video {
     grid-column: 2 / 4;
     grid-row: 1 / 4;
+
     min-height: 0;
     overflow: hidden;
 }
 
-#hero-about {
+#hero-video {
     width: 100%;
     height: 100%;
+    
     object-fit: cover;
-    transform: scale(2);
     transform-origin: bottom;
 }
