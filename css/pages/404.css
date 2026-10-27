@@ -23,10 +23,9 @@
     border-radius: 1000px;
 
     text-decoration: none;
-    transition: background 0.2s ease, color 0.2s ease;
+    transition: transform 0.2s;
 }
 
 .button-link:hover {
-    background: transparent;
-    color: var(--text);
+    transform: scale(1.1);
 }

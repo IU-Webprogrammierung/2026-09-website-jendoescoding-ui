@@ -109,21 +109,45 @@ body {
 .grid-arrow-forward {
   position: relative;
   z-index: 5;
+  margin: 20px;
 }
 
 .grid-arrow-back {
-  padding: 20px;
   grid-column: 2;
   grid-row: 3;
+  justify-self: start;
   align-self: end;
 }
 
 .grid-arrow-forward {
-  padding: 20px;
   grid-column: 3;
   grid-row: 3;
   justify-self: end;
   align-self: end;
+}
+
+.grid-arrow-back a,
+.grid-arrow-forward a {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--text);
+  transition: transform 0.2s;
+}
+
+.grid-arrow-back a:hover,
+.grid-arrow-forward a:hover {
+  transform: scale(1.1);
+}
+
+.grid-arrow-back img,
+.grid-arrow-forward img {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 /* Dropdown Transitions */
@@ -207,6 +231,6 @@ body {
 
 }
 
-.header-hidden {
+.hidden {
   opacity: 0;
 }
