@@ -1,3 +1,7 @@
+.videos-main {
+    display: contents;
+}
+
 .grid-item-video h1 {
     color: var(--accent-text);
 }
