@@ -42,3 +42,32 @@
     background-color: --var(bg);
     color: --var(text);
 }
+
+.grid-social {
+    grid-column: 2 / 4;
+    grid-row: 3;
+    justify-self: center;
+    align-self: end;
+    position: relative;
+    z-index: 5;
+
+    width: min(100%, 420px);
+    margin-bottom: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.streaming-services {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.spotify-link,
+.apple-link,
+.youtube-link,
+.soundcloud-link {
+    display: grid;
+    place-items: center;
+}
