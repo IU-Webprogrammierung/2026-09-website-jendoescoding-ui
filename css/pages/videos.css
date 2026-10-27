@@ -58,6 +58,24 @@
     line-height: 0.5;
 }
 
+.video-frame-4,
+.video-frame-4 h1,
+.video-frame-4 p {
+    grid-column: 3;
+    grid-row: 3;
+
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    max-width: 420px;
+    min-width: 0;
+    text-align: center;
+
+    color: var(--accent-text);
+    line-height: 0.5;
+}
+
+
 .grid-item-video {
     grid-column: 2;
     grid-row: 1;
@@ -65,10 +83,10 @@
     align-self: end;
 }
 
-
 .video-frame-1 iframe,
 .video-frame-2 iframe,
-.video-frame-3 iframe {
+.video-frame-3 iframe,
+.video-frame-4 iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
     height: auto;
