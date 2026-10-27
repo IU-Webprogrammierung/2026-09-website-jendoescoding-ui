@@ -1,7 +1,6 @@
 /* 1. Navigation with arrow keys */
 
 document.addEventListener("keydown", (e) => {
-    // Browser-Kürzel nicht stören (Alt + Pfeil links = Zurück im Browser)
     if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
 
     const el = document.activeElement;
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("motion-toggle");
     if (!video || !btn) return;
 
-    // Gespeicherte Wahl hat Vorrang, sonst gilt die Systemeinstellung "Bewegung reduzieren"
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     let saved = null;
     try { saved = localStorage.getItem("bgMotion"); } catch (e) { }
