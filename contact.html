@@ -8,6 +8,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/pages/contact.css">
 
     <!--HTMX-->
     <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
@@ -38,23 +39,31 @@
 
         <!--Content of Page-->
 
-        <div class="grid-item-contact">
-            <h1>get in touch!</h1>
-            <form action="/action_page.php">
-                <label for="yname">your name:</label><br>
-                <input type="text" id="yname" name="yname"><br>
-                <label for="lname">your message:</label><br>
-                <textarea></textarea><br>
+        <main class="grid-item-contact">
+            <h1>Get in touch!</h1>
+            <p>All fields are required.</p>
 
-                <input type="submit" value="Submit"><br>
+            <div class="form-field">
+                <input type="text" id="yname" name="yname" placeholder="Your Name" required>
+            </div>
 
-                <input type="checkbox" id="privacy" name="pol_privacy" value="JavaScript">
-                <label for="privacy">I’ve read the privacy policy and consent to my data being shared with jen in order
-                    to
-                    get in touch with me.</label>
+            <div class="form-field">
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="Your E-Mail" required>
+            </div>
 
-            </form>
-        </div>
+            <div class="form-field">
+                <textarea id="message" name="message" rows="6" required placeholder="Your Message"></textarea>
+            </div>
+
+            <div class="form-field form-check">
+                <input type="checkbox" id="privacy-check" name="privacy-check" value="accepted" required>
+                <label for="privacy">I’ve read the <a href="policy.html">privacy policy</a> and consent
+                    to my data being shared in order to get in touch with jen.</label>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </main>
 
         <!--Global Footer-->
 
