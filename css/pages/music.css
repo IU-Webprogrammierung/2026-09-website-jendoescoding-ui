@@ -73,12 +73,3 @@
 .motion-toggle:hover {
   transform: scale(1.1);
 }
-
-.motion-toggle:focus-visible {
-  outline: 2px solid #A8B58A;
-  outline-offset: 3px;
-}
-
-.motion-toggle.is-playing {
-  animation: bird-pulse 2s ease-out infinite;
-}
