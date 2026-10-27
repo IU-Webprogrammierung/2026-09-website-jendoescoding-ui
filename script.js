@@ -1,34 +1,50 @@
-/* Arrow Keys */
+/* 1. Navigation with arrow keys */
 
 document.addEventListener("keydown", (e) => {
+    // Browser-Kürzel nicht stören (Alt + Pfeil links = Zurück im Browser)
+    if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
+
+    const el = document.activeElement;
+    const isTyping = el && (
+        el.isContentEditable ||
+        ["INPUT", "TEXTAREA", "SELECT"].includes(el.tagName)
+    );
+    if (isTyping) return;
+
     if (e.key === "ArrowLeft") document.querySelector(".grid-arrow-back a")?.click();
     if (e.key === "ArrowRight") document.querySelector(".grid-arrow-forward a")?.click();
 });
 
-/* Play Button */
+
+/* 2. Pause background visuals (music.html) */
 
 document.addEventListener("DOMContentLoaded", () => {
-    const btn = document.getElementById("bird-toggle");
-    const audio = document.getElementById("bird-audio");
-    if (!btn || !audio) return;
+    const video = document.getElementById("hero-video");
+    const btn = document.getElementById("motion-toggle");
+    if (!video || !btn) return;
+
+    // Gespeicherte Wahl hat Vorrang, sonst gilt die Systemeinstellung "Bewegung reduzieren"
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let saved = null;
+    try { saved = localStorage.getItem("bgMotion"); } catch (e) { }
+
+    if (saved === "off" || (saved === null && reduced)) {
+        video.pause();
+    }
+
+    function updateButton() {
+        btn.textContent = video.paused ? "▶" : "❚❚";
+    }
 
     btn.addEventListener("click", () => {
-        if (audio.paused) {
-            audio.play().catch(() => { });
+        if (video.paused) {
+            video.play().catch(() => { });
         } else {
-            audio.pause();
+            video.pause();
         }
+        try { localStorage.setItem("bgMotion", video.paused ? "off" : "on"); } catch (e) { }
+        updateButton();
     });
 
-    audio.addEventListener("play", () => {
-        btn.textContent = "❚❚";
-        btn.setAttribute("aria-label", "Play ambient bird sounds");
-        btn.classList.add("is-playing");
-    });
-
-    audio.addEventListener("pause", () => {
-        btn.textContent = "▶";
-        btn.setAttribute("aria-label", "Stop ambient bird sounds");
-        btn.classList.remove("is-playing");
-    });
+    updateButton();
 });
