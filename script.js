@@ -46,3 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateButton();
 });
+
+/* Marking currently opened page within Navigation */
+
+document.body.addEventListener("htmx:afterSettle", () => {
+    const current = location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".grid-nav a").forEach((link) => {
+        if (link.getAttribute("href") === current) {
+            link.setAttribute("aria-current", "page");
+        } else {
+            link.removeAttribute("aria-current");
+        }
+    });
+});
