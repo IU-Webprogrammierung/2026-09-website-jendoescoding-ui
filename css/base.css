@@ -130,11 +130,11 @@ body {
 .grid-arrow-forward a {
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: var(--bg);
-  border: 2px solid var(--text);
+  border: 1px solid var(--text);
   transition: transform 0.2s;
 }
 
@@ -145,8 +145,8 @@ body {
 
 .grid-arrow-back img,
 .grid-arrow-forward img {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   display: block;
 }
 
@@ -230,6 +230,9 @@ body {
   color: var(--text);
 
 }
+
+
+/* Hidden Elements */
 
 .hidden {
   opacity: 0;
