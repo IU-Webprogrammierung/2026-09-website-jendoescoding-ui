@@ -5,13 +5,28 @@
     background: var(--overlay);
     text-decoration: none;
     padding: 60px 100px;
+    border-radius: 20px;
 
     justify-self: center;
     align-self: center;
     text-align: center;
 }
 
-.grid-item-error a {
+.button-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 24px;
+
+    color: var(--bg);
+    background: var(--text);
+    border: 2px solid var(--text);
+    border-radius: 1000px;
+
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.button-link:hover {
+    background: transparent;
     color: var(--text);
-    font-weight: bold;
 }
