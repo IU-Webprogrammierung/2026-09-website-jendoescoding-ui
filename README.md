@@ -20,8 +20,8 @@ Für die Prüfungsleistung wird ein persönlicher Webauftritt für die Künstler
 | Über Mich | `about.html` | Inhalte über die Künstlerpersona: Anfänge, Meilensteine, künftige Ziele |
 | Persona | `persona.html` | Übersicht erstellter Illustrationen sowie Charakterreferenzen zur eigenen Erstellung |
 | Musik | `music.html` | Übersicht aktueller Streaming Dienste und neuster Uploads |
-| Videos | `video.html` | Persönliche Favoriten mit Annotationen rund um Rolle innerhalb des kreativen Prozesses (Produzent, Vocalist, ..) |
-| Lyrics | `lyrics.html` | Übersicht ersteller (Trans-)Lyrics inkl. Video-Embed und Annotationen |
+| Videos | `video.html` | Persönliche Favoriten mit Angabe von Rolle innerhalb des kreativen Prozesses |
+| Lyrics | `lyrics.html` | Übersicht erarbeiteter Lyrics |
 | Equipment | `equipment.html` | Übersicht verwendeter Hard- und Software innerhalb des kreativen Prozesses |
 | Kontakt | `contact.html` | Kontaktformular |
 | Datenschutz | `policy.html` | Aufklärung bzgl. Erhebung von persönlichen Daten durch Kontaktformular |
@@ -30,3 +30,4 @@ Für die Prüfungsleistung wird ein persönlicher Webauftritt für die Künstler
 ### Technologie
 - HTML
 - CSS
+- JavaScript
