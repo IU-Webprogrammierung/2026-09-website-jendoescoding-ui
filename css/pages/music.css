@@ -52,24 +52,24 @@
 /* Button */
 
 .motion-toggle {
-  grid-column: 2 / 4;
-  grid-row: 1;
-  justify-self: end;
-  align-self: start;
-  z-index: 5;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    justify-self: end;
+    align-self: start;
+    z-index: 5;
 
-  margin: 40px;
-  width: 48px;
-  height: 48px;
-  border: none;
-  border-radius: 50%;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 18px;
-  cursor: pointer;
-  transition: transform 0.2s;
+    margin: 40px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .motion-toggle:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }

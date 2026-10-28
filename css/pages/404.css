@@ -1,3 +1,5 @@
+/* Error-Message */
+
 .grid-item-error {
     grid-column: 2 / 4;
     grid-row: 1 / 4;
@@ -13,16 +15,15 @@
 }
 
 .button-link {
+    background: var(--text);
+    color: var(--bg);
+    text-decoration: none;
+    border: 2px solid var(--text);
+    border-radius: 1000px;
     display: inline-block;
     margin-top: 8px;
     padding: 12px 24px;
 
-    color: var(--bg);
-    background: var(--text);
-    border: 2px solid var(--text);
-    border-radius: 1000px;
-
-    text-decoration: none;
     transition: transform 0.2s;
 }
 

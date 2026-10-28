@@ -234,3 +234,7 @@ body {
   color: var(--text);
 
 }
+
+.hidden {
+  opacity: 0;
+}
