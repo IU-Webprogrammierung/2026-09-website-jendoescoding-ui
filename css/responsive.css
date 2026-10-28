@@ -1,4 +1,4 @@
-/* Mobile / Tablet: bis 800px Breite */
+/* Grundgerüst für Mobile / Tablet: bis 800px Breite */
 
 @media (max-width: 800px) {
 
@@ -87,5 +87,77 @@
         grid-column: 2;
 
         justify-self: end;
+    }
+
+    img,
+    video,
+    iframe {
+        max-width: 100%;
+    }
+
+
+    /* About */
+
+    .page-about .hero-frame {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        height: 30vh;
+    }
+
+    .page-about #sitting-jen {
+        grid-column: 1 / 3;
+        grid-row: 3;
+
+        padding: 20px;
+        transform: translateY(60px);
+        width: 120px;
+        z-index: 2;
+
+        justify-self: end;
+        align-self: end;
+    }
+
+    .page-about .grid-item-about {
+        grid-column: 1 / 3;
+        grid-row: 4;
+        padding: 24px 20px;
+        font-size: 1rem;
+        background-color: var(--bg);
+        color: var(--text);
+    }
+
+    .page-about .streaming-services {
+        --icon-size: 40px;
+
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 24px 0 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .page-about .streaming-services a {
+        margin: 0;
+        padding: 10px;
+    }
+    .page-about .grid-footer {
+        grid-column: 1 / 3;
+        grid-row: 5;
+        
+        align-self: end;
+        padding: 16px 72px;
+        background: none;
+    }
+
+    .page-about .grid-footer a,
+    .page-about .grid-footer p {
+        color: var(--text);
+    }
+
+    .page-about .grid-arrow-back,
+    .page-about .grid-arrow-forward {
+        grid-row: 5;
+        align-self: center;
     }
 }
