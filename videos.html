@@ -27,49 +27,63 @@
     <title>jen's videos</title>
 </head>
 
-<body>
+<body class="page-videos">
 
     <div class="grid-container">
 
         <!--Global Navigation & Hero Image-->
 
         <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
-        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+
+        <div class="hero-frame-butterfly"><img src="assets/butterflyjen.png" alt="jen and a couple of butterflies"
+                id="hero-butterfly"></div>
 
         <!--Content of Page-->
 
         <main class="videos-main">
 
-            <div class="grid-item-video">
-                <h1>videos</h1>
-            </div>
+            <h1 class="videos-title">videos</h1>
 
-            <div class="video-frame-1"><iframe width="420" height="315" src="https://www.youtube.com/embed/NBbfL5Ni-UI"
-                    title="Video: Through The Darkness, a cover by jen"></iframe>
-                <h2>Through the Darkness</h2>
-                <p>role: vocalist, producer &amp; video editor</p>
-            </div>
+            <div class="video-list" tabindex="0" role="region" aria-label="Video list">
 
-            <div class="video-frame-2"><iframe width="420" height="315" src="https://www.youtube.com/embed/zGUbGu3o45k"
-                    title="Video: Square Up, a cover by jen"></iframe>
-                <h2 id="square-up">Square Up</h2>
-                <p>role: vocalist</p>
-            </div>
+                <div class="video-card">
+                    <iframe src="https://www.youtube.com/embed/NBbfL5Ni-UI" loading="lazy" allowfullscreen
+                        title="Video: Through The Darkness, a cover by jen"></iframe>
+                    <div class="video-info">
+                        <h2>Through the Darkness</h2>
+                        <p>role: vocalist, producer &amp; video editor</p>
+                    </div>
+                </div>
 
-            <div class="video-frame-3"><iframe width="420" height="315" src="https://www.youtube.com/embed/vOovxRfJs6M"
-                    title="Video: Log Off, a cover by jen"></iframe>
-                <h2 id="log-off">Log Off</h2>
-                <p>role: vocalist</p>
-            </div>
+                <article class="video-card">
+                    <iframe src="https://www.youtube.com/embed/zGUbGu3o45k" loading="lazy" allowfullscreen
+                        title="Video: Square Up, a cover by jen"></iframe>
+                    <div class="video-info">
+                        <h2 id="square-up">Square Up</h2>
+                        <p>role: vocalist</p>
+                    </div>
+                </article>
 
-            <div class="video-frame-4"><iframe width="420" height="315" src="https://www.youtube.com/embed/usfW7LK3tsc"
-                    title="Video: Show Me Your Revival, a cover by jen"></iframe>
-                <h2 id="show-me-your-revival">Show Me Your Revival</h2>
-                <p>role: vocalist &amp; video editor</p>
-            </div>
+                <article class="video-card">
+                    <iframe src="https://www.youtube.com/embed/vOovxRfJs6M" loading="lazy" allowfullscreen
+                        title="Video: Log Off, a cover by jen"></iframe>
+                    <div class="video-info">
+                        <h2 id="log-off">Log Off</h2>
+                        <p>role: vocalist</p>
+                    </div>
+                </article>
 
+                <article class="video-card">
+                    <iframe src="https://www.youtube.com/embed/usfW7LK3tsc" loading="lazy" allowfullscreen
+                        title="Video: Show Me Your Revival, a cover by jen"></iframe>
+                    <div class="video-info">
+                        <h2>Show Me Your Revival</h2>
+                        <p>role: vocalist &amp; video editor</p>
+                    </div>
+                </article>
+
+            </div>
         </main>
-
 
         <!--Global Footer-->
 
