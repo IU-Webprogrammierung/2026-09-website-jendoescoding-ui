@@ -149,7 +149,8 @@
     }
 
     .page-about .grid-footer,
-    .page-persona .grid-footer {
+    .page-persona .grid-footer,
+    .page-videos .grid-footer {
         grid-column: 1 / 3;
         grid-row: 5;
 
@@ -161,14 +162,18 @@
     .page-about .grid-footer a,
     .page-about .grid-footer p,
     .page-persona .grid-footer a,
-    .page-persona .grid-footer p {
+    .page-persona .grid-footer p,
+    .page-videos .grid-footer a,
+    .page-videos .grid-footer p {
         color: var(--text);
     }
 
     .page-about .grid-arrow-back,
     .page-about .grid-arrow-forward,
     .page-persona .grid-arrow-back,
-    .page-persona .grid-arrow-forward {
+    .page-persona .grid-arrow-forward,
+    .page-videos .grid-arrow-forward,
+    .page-videos .grid-arrow-back {
         grid-row: 5;
         align-self: center;
     }
@@ -202,5 +207,13 @@
         grid-row: 3;
         align-self: start;
         margin: 16px;
+    }
+
+
+    /* Videos */
+
+    .page-videos .videos-main {
+        grid-column: 1 / 4;
+        grid-row: 3;
     }
 }
