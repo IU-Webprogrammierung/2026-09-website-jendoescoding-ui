@@ -35,25 +35,30 @@
 
         <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
 
-        <div class="hero-frame-butterfly"><img src="assets/butterflyjen.png" alt="jen and a couple of butterflies"
-                id="hero-butterfly"></div>
-
         <!--Content of Page-->
 
         <main class="videos-main">
-
             <h1 class="videos-title">videos</h1>
 
             <div class="video-list" tabindex="0" role="region" aria-label="Video list">
 
-                <div class="video-card">
+                <article class="video-card">
                     <iframe src="https://www.youtube.com/embed/NBbfL5Ni-UI" loading="lazy" allowfullscreen
                         title="Video: Through The Darkness, a cover by jen"></iframe>
                     <div class="video-info">
                         <h2>Through the Darkness</h2>
                         <p>role: vocalist, producer &amp; video editor</p>
+                        <ul class="release-links" aria-label="Listen to Through the Darkness">
+                            <li><a href="https://open.spotify.com/intl-de/album/0hjlnPMMNkYDcwQ0YnIpsB">
+                                    <img src="assets/icons/spotify.svg" alt=""></a></li>
+                            <li><a
+                                    href="https://music.apple.com/de/album/through-the-darkness-from-resident-evil-requiem-single/6767786313">
+                                    <img src="assets/icons/applemusic.svg" alt=""></a></li>
+                            <li><a href="https://soundcloud.com/xunreachablee/through-the-darkness-city-pop-ver-jen">
+                                    <img src="assets/icons/soundcloud.svg" alt=""></a></li>
+                        </ul>
                     </div>
-                </div>
+                </article>
 
                 <article class="video-card">
                     <iframe src="https://www.youtube.com/embed/zGUbGu3o45k" loading="lazy" allowfullscreen
@@ -79,6 +84,13 @@
                     <div class="video-info">
                         <h2>Show Me Your Revival</h2>
                         <p>role: vocalist &amp; video editor</p>
+                        <ul class="release-links" aria-label="Listen to Show Me Your Revival">
+                            <li><a href="https://open.spotify.com/intl-de/album/42ulzgyPbhvIfj2ugpDTHg">
+                                    <img src="assets/icons/spotify.svg" alt=""></a></li>
+                            <li><a
+                                    href="https://music.apple.com/us/album/show-me-your-revival-feat-jen-revival-remix-single/6785678553">
+                                    <img src="assets/icons/applemusic.svg" alt=""></a></li>
+                        </ul>
                     </div>
                 </article>
 
