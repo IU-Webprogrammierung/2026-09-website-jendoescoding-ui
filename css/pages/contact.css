@@ -11,6 +11,11 @@
   color: var(--text);
 }
 
+.hero-frame-contact {
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
 .form-field {
   margin-bottom: 20px;
 }
