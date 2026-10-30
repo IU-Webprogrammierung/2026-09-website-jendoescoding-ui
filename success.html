@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/pages/success.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--HTMX-->
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.11/dist/htmx.min.js"
+        integrity="sha384-2OatzQy1H+Zd/IIrjr1TcuDGqLXeHhbooAyJY1KdQMKnr4LZ22k31GBLdYKHmVjg"
+        crossorigin="anonymous"></script>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+        rel="stylesheet">
+
+    <!--JS-->
+    <script src="script.js"></script>
+
+    <title>success!</title>
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <!--Global Navigation & Hero Image-->
+
+        <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
+        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
+
+
+        <!--Content of Page-->
+
+        <main class="grid-item-success">
+            <h1>message sent!</h1>
+            <p>thank you for reaching out.
+                you'll hear back very soon!</p>
+            <a href="index.html" class="button-link">return to home</a>
+        </main>
+
+        <!--Global Footer-->
+
+        <footer class="grid-footer">
+            <nav hx-get="htmx-components/footer.html" hx-trigger="load" hx-swap="outerHTML"></nav>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
