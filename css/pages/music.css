@@ -11,6 +11,11 @@
     text-align: center;
 }
 
+.grid-item-new h1 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--bg);
+}
+
 #hero-video {
     width: 100%;
     height: 100%;

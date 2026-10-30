@@ -9,3 +9,8 @@
   color: rgb(255, 255, 255);
   padding: 20px 50px;
 }
+
+.grid-item-equipment h1 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--text);
+}

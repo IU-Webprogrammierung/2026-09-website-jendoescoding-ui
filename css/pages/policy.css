@@ -10,3 +10,8 @@
   padding: 20px 50px;
   overflow-y: auto;
 }
+
+.grid-item-policy h1 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--text);
+}

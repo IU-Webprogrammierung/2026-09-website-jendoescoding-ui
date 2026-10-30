@@ -10,6 +10,11 @@
   overflow-y: auto;
 }
 
+.grid-item-lyrics h1 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--text);
+}
+
 .grid-item-lyrics p {
   white-space: pre-line;
 }

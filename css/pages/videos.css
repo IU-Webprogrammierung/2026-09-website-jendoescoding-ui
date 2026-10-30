@@ -13,9 +13,8 @@
 }
 
 .videos-title {
-    margin: 0;
-    padding: 24px 24px 0;
-    color: var(--text);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--text);
 }
 
 .video-list {

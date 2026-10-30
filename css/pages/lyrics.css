@@ -13,7 +13,7 @@
   align-items: flex-end;
 
   padding-bottom: 12px;
-  border-bottom: 2px solid var(--text);
+  border-bottom: 1px solid var(--text);
 }
 
 .grid-item-lyrics_list ul {

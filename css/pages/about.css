@@ -1,13 +1,16 @@
 /* Menüpunkt: About */
 
-
-
 .hero-frame-main {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
 
     overflow: hidden;
     min-height: 0;
+}
+
+.grid-item-about h1 {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--text);
 }
 
 #sitting-jen {
