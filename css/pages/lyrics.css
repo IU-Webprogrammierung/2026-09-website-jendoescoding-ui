@@ -2,23 +2,65 @@
 
 .grid-item-lyrics_list {
   grid-column: 2 / 4;
-  grid-row: 2 / 4;
+  grid-row: 1 / 4;
 
-  font-size: 20px;
-  background-color: #A8B58A;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
   padding: 20px 50px;
+  align-self: center;
+}
+
+.grid-item-lyrics_list h1 {
+  display: flex;
+  align-items: flex-end;
+
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--text);
+}
+
+.grid-item-lyrics_list ul {
+  columns: 2 320px;
+  column-gap: 48px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.grid-item-lyrics_list li {
+  counter-increment: song;
+  border-bottom: 1px solid rgba(45, 44, 42, 0.25);
+}
+
+.grid-item-lyrics_list li>a,
+.grid-item-lyrics_list li>span {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 16px 4px;
+
+  color: var(--text);
+  text-decoration: none;
+  transition: padding-left 0.2s, background-color 0.2s;
+}
+
+.grid-item-lyrics_list li>a::before,
+.grid-item-lyrics_list li>span::before {
+  content: counter(song, decimal-leading-zero);
+  flex: none;
+
+  opacity: 0.6;
+}
+
+.grid-item-lyrics_list li>a:hover {
+  padding-left: 16px;
+  background-color: rgba(45, 44, 42, 0.06);
+}
+
+.coming-soon small {
+  margin-left: auto;
+
+  opacity: 0.6;
 }
 
 #lyrics-idol,
 #four-am {
   text-transform: uppercase;
-}
-
-.grid-item-lyrics_list a,
-.grid-item-lyrics_list ul,
-.grid-item-lyrics_list li {
-    text-decoration: none;
-    list-style: none;
 }
