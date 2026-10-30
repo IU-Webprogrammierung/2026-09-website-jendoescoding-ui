@@ -1,9 +1,4 @@
 # Creative Lab: Web-Programmierung (DLBUXPWP01)
-## Über das Projekt
-Das folgenden Projekt ist Teil des UX-Design Studiums an der IU Internationale Hochschule.
-
-## Aufgabenstellung
-Ziel dieses 3-monatigen Creative Labs ist ein responsiver, persönlicher Webauftritt, welcher mithilfe von u.a. HTML und CSS erarbeitet wird. Dieser soll aus mindesten vier verlinkte Seiten oder einem vergleichbaren One-Pager mit mindestens vier Bereichen bestehen.
 
 ## Inhaltsverzeichnis
 
@@ -11,8 +6,13 @@ Ziel dieses 3-monatigen Creative Labs ist ein responsiver, persönlicher Webauft
 - [Konzeptionsphase](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Konzeptionsphase)
 - [Seitenübersicht](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Seitenübersicht)
 - [Technologie](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Technologie)
-- [Offene To Do's](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Offene-To-Do's)
+- [Offene To Do's](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#offene-to-dos)
 - [Erarbeitungsphase](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Erarbeitungsphase)
+
+## Über das Projekt
+Das folgenden Projekt ist Teil des UX-Design Studiums an der IU Internationale Hochschule.
+
+Ziel dieses 3-monatigen Creative Labs ist ein responsiver, persönlicher Webauftritt, welcher mithilfe von u.a. HTML und CSS erarbeitet wird. Dieser soll aus mindesten vier verlinkte Seiten oder einem vergleichbaren One-Pager mit mindestens vier Bereichen bestehen.
 
 ### Konzept
 Für die Prüfungsleistung wird ein persönlicher Webauftritt für die Künstlerpersona [jen](https://www.youtube.com/@xunreachablee) in englisch erarbeitet. Diese soll stilistisch einem Album Booklet ähneln.
@@ -37,7 +37,7 @@ In der ersten Phase dieser Prüfungsleistung wurde das Konzept erarbeitet. Dabei
 
 Anschließend wurden die zu Blatt gebrachten Skizzen und digitale aufbereiteten Wireframes mit HTML und minimalmen CSS mit Visual Studio Code realisiert.
 
-### Technologien
+### Verwendete Technologien
 - HTML
 - CSS
 
