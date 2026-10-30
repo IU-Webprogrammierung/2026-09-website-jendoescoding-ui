@@ -3,9 +3,74 @@
 .grid-item-contact {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
-  font-size: 20px;
-  background-color: #A8B58A;
+
+  grid-template-rows: 1fr 1fr;
+  padding: 48px 48px 96px;
+
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 0.5px solid var(--text);
+  border-radius: 10px;
+}
+
+.form-field input[type="text"] {
+  max-width: 420px;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.form-check input {
+  margin-top: 4px;
+}
+
+.form-check label {
+  margin: 0;
+  font-weight: 400;
+}
+
+.form-check a {
+  text-decoration: underline;
+}
+
+.button-link {
+  background: var(--text);
+  color: var(--bg);
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding: 20px 50px;
+  border: 2px solid var(--text);
+  border-radius: 1000px;
+  display: inline-block;
+  margin-top: 8px;
+  padding: 12px 24px;
+
+  transition: transform 0.2s;
+}
+
+.button-link:hover {
+  transform: scale(1.1);
 }
