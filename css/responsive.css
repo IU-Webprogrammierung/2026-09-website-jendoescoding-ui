@@ -100,13 +100,14 @@
     }
 
 
-    /* About & Persona */
+    /* Pages with Hero-Frames */
 
     .page-about .hero-frame-main,
-    .page-persona .hero-frame-persona {
+    .page-persona .hero-frame-persona,
+    .page-contact .hero-frame-contact {
         grid-column: 1 / 3;
         grid-row: 3;
-        height: 30vh;
+        height: 20vh;
     }
 
     .page-about #sitting-jen {
@@ -114,7 +115,7 @@
         grid-row: 3;
 
         padding: 20px;
-        transform: translateY(60px);
+        transform: translateY(0px);
         width: 120px;
         z-index: 2;
 
@@ -122,15 +123,18 @@
         align-self: end;
     }
 
+    /* About & Persona */
+
     .page-about .grid-item-about,
     .page-persona .grid-item-persona {
         grid-column: 1 / 3;
         grid-row: 4;
-        padding: 24px 20px;
-        font-size: 1rem;
-        background-color: var(--bg);
-        color: var(--text);
+        padding: 50px 50px;
+        align-self: stretch;
+        overflow-y: auto;
     }
+
+    /* Streaming-Services */
 
     .page-about .streaming-services {
         --icon-size: 40px;
@@ -148,9 +152,12 @@
         padding: 10px;
     }
 
+    /* Footer*/
+
     .page-about .grid-footer,
     .page-persona .grid-footer,
-    .page-videos .grid-footer {
+    .page-videos .grid-footer,
+    .page-contact .grid-footer {
         grid-column: 1 / 3;
         grid-row: 5;
 
@@ -164,7 +171,9 @@
     .page-persona .grid-footer a,
     .page-persona .grid-footer p,
     .page-videos .grid-footer a,
-    .page-videos .grid-footer p {
+    .page-videos .grid-footer p,
+    .page-contact .grid-footer a,
+    .page-contact .grid-footer p {
         color: var(--text);
     }
 
@@ -173,7 +182,9 @@
     .page-persona .grid-arrow-back,
     .page-persona .grid-arrow-forward,
     .page-videos .grid-arrow-forward,
-    .page-videos .grid-arrow-back {
+    .page-videos .grid-arrow-back,
+    .page-contact .grid-arrow-forward,
+    .page-contact .grid-arrow-back {
         grid-row: 5;
         align-self: center;
     }
@@ -196,12 +207,6 @@
         align-self: center;
     }
 
-
-    .page-music .grid-footer a,
-    .page-music .grid-footer p {
-        color: var(--bg);
-    }
-
     .page-music .motion-toggle {
         grid-column: 1 / 3;
         grid-row: 3;
@@ -209,11 +214,16 @@
         margin: 16px;
     }
 
-
     /* Videos */
 
     .page-videos .videos-main {
         grid-column: 1 / 4;
         grid-row: 3;
+    }
+
+    .page-contact .grid-item-contact {
+        grid-column: 1 / 3;
+        grid-row: 4;
+        align-self: center;
     }
 }
