@@ -11,9 +11,16 @@
   color: var(--text);
 }
 
-.grid-item-contact h1 {
+.page-header {
+    margin: 32px 0 32px;
     padding-bottom: 12px;
     border-bottom: 1px solid var(--text);
+}
+
+.page-header h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .hero-frame-contact {

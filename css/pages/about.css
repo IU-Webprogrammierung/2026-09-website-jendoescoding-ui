@@ -8,9 +8,16 @@
     min-height: 0;
 }
 
-.grid-item-about h1 {
+.page-header {
+    margin: 32px 0 32px;
     padding-bottom: 12px;
     border-bottom: 1px solid var(--text);
+}
+
+.page-header h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 #sitting-jen {
@@ -59,10 +66,4 @@
     display: grid;
     place-items: center;
     margin: 20px;
-}
-
-.streaming-services img {
-    width: var(--icon-size);
-    height: var(--icon-size);
-    display: block;
 }

@@ -13,15 +13,19 @@
   grid-row: 2 / 4;
 
   padding: 48px;
-  align-self: center;
+  overflow-y: auto;
 }
 
-.grid-item-equipment h1 {
-  display: flex;
-  align-items: flex-end;
+.page-header {
+    margin: 32px 0 32px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--text);
+}
 
-  padding-bottom: 12px;
-  border-bottom: 1px solid var(--text);
+.page-header h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .equipment-groups section+section {
