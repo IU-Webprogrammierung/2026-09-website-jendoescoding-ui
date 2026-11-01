@@ -2,15 +2,32 @@
 
 .grid-item-equipment {
   grid-column: 2 / 4;
-  grid-row: 2 / 4;
-  font-size: 20px;
-  background-color: #A8B58A;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding: 20px 50px;
+  grid-row: 1 / 4;
+
+  padding: 48px;
+  align-self: center;
 }
 
 .grid-item-equipment h1 {
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--text);
+  display: flex;
+  align-items: flex-end;
+
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--text);
+}
+
+.equipment-groups section + section {
+  margin-top: 48px;
+}
+
+.equipment-groups h2 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.equipment-groups li {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 4px;
+  border-bottom: 1px solid rgba(45, 44, 42, 0.25);
 }

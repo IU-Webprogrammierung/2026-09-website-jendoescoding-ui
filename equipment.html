@@ -27,33 +27,60 @@
     <title>jen's equipment</title>
 </head>
 
-<body>
+<body class="page-equipment">
 
     <div class="grid-container">
 
         <!--Global Navigation & Hero Image-->
 
         <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
-        <img src="assets/heroimagejen.jpg" alt="Jen sitting in grass" id="hero-main">
 
         <!--Page Content-->
 
         <main class="grid-item-equipment">
             <h1>equipment</h1>
-            <h2>Instruments</h2>
-            <ul>
-                <li>Keyboard: Nektar Impact GX61</li>
-                <li>Ukulele: Fender SMC-21</li>
-                <li>Acoustic Guitar: Fender CD-60 BK-DS-V2</li>
-            </ul>
 
-            <h2>For Recording</h2>
-            <ul>
-                <li>Microphone for Vocal Recording: FAME Studio CU2</li>
-                <li>Microphone for Instrumental Recording: ZOOM H1n Handy Recorder</li>
-                <li>Mixing & Recording: FL Studio 21</li>
-                <li>Editing: Final Cut Pro, Pixelmator Pro</li>
-            </ul>
+            <div class="equipment-groups">
+
+                <section aria-labelledby="equipment-instruments">
+                    <h2 id="equipment-instruments">Instruments</h2>
+                    <ul>
+                        <li><span class="equipment-type">Keyboard</span><span class="equipment-name">Nektar Impact
+                                GX61</span></li>
+                        <li><span class="equipment-type">Ukulele</span><span class="equipment-name">Fender SMC-21</span>
+                        </li>
+                        <li><span class="equipment-type">Acoustic Guitar</span><span class="equipment-name">Fender CD-60
+                                BK-DS-V2</span></li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="equipment-recording">
+                    <h2 id="equipment-recording">For Recording</h2>
+                    <ul>
+                        <li><span class="equipment-type">Microphone for Vocals</span><span class="equipment-name">FAME
+                                Studio
+                                CU2</span></li>
+                        <li><span class="equipment-type">Microphone for Instruments</span><span
+                                class="equipment-name">ZOOM
+                                H1n Handy
+                                Recorder</span></li>
+                        <li><span class="equipment-type">Vocal Recording &amp; Mixing</span><span
+                                class="equipment-name">FL
+                                Studio 21</span></li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="equipment-editing">
+                    <h2 id="equipment-editing">For Editing</h2>
+                    <ul>
+                        <li><span class="equipment-type">Video Editing</span><span class="equipment-name">Final Cut Pro,
+                                Filmora Wondershare</span></li>
+                        <li><span class="equipment-type">Photo Editing</span><span class="equipment-name">Canva,
+                                PicMonkey, Pixelmator Pro</span></li>
+                    </ul>
+                </section>
+
+            </div>
         </main>
 
         <!--Global Footer-->
