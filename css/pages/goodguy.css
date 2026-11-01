@@ -1,20 +1,48 @@
 /* Menüpunkt: Lyrics - Good Guy */
+
+.lyrics-video {
+  max-width: 720px;
+  padding-top: 32px;
+}
+
+.lyrics-video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+}
+
 .grid-item-lyrics {
   grid-column: 2 / 4;
-  grid-row: 2 / 4;
-  font-size: 20px;
-  background-color: #A8B58A;
-  text-decoration: none;
-  color: rgb(255, 254, 254);
-  padding: 20px 50px;
+  grid-row: 1 / 4;
   overflow-y: auto;
+
+  padding: 0 48px 96px;
+  background-color: var(--bg);
 }
 
-.grid-item-lyrics h1 {
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--text);
+.lyrics-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 0;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--text);
 }
 
-.grid-item-lyrics p {
+.lyrics-header h1 {
+  margin: 0;
+}
+
+.lyrics-meta {
+  margin: 8px 0 0;
+  font-size: 16px;
+}
+
+.lyrics-text p {
+  line-height: 1.5;
   white-space: pre-line;
 }
