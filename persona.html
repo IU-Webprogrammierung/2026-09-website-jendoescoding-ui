@@ -34,36 +34,51 @@
         <!--Global Navigation & Hero Image-->
 
         <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
-        <div class="hero-frame-persona"><img src="assets/fallingjen.jpg" alt="jen's persona falling" id="hero-persona">
+        <div class="hero-frame-persona"><img src="assets/fallingjen.jpg" alt="jen falling" id="hero-persona">
         </div>
 
         <!--Content of Page-->
 
         <main class="grid-item-persona">
             <h1>persona</h1>
-            <h2>hair</h2>
-            <p>split red and black hair color, as seen by viewer:</p>
-            <ul>
-                <li>Red (#cd514d) is on the right.</li>
-                <li>Black (#272625) is on the left.</li>
-            </ul>
-            <h2>accessoires</h2>
-            <p>round glasses, freckles</p>
-            <h2>eyes</h2>
-            <p>blueish green (#829a89)</p>
-            <h2>clothing</h2>
-            <ul>
-                <li>white buttoned up blouse (#f4ecec) with a black ribbon</li>
-                <li>pleated black skirt (#272625)</li>
-                <li>knee thigh highs</li>
-            </ul>
-            <h2>restriction on use</h2>
-            <p>The use, reproduction, adaptation, or portrayal
-                of my persona is not permitted without my prior
-                written consent. The persona may be used solely
-                in connection with me and my work, and may not
-                be adopted, imitated, or used by others as their
-                own persona or for their personal use.</p>
+            <section aria-labelledby="persona-hair">
+                <h2>hair</h2>
+                <p>split red and black hair color, as seen by viewer:</p>
+                <ul>
+                    <li>Red (#cd514d) is on the right.</li>
+                    <li>Black (#272625) is on the left.</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="persona-accessoires">
+                <h2>accessoires</h2>
+                <p>round glasses, freckles</p>
+            </section>
+
+            <section aria-labelledby="persona-eyes">
+                <h2>eyes</h2>
+                <p>blueish green (#829a89)</p>
+            </section>
+
+            <section aria-labelledby="persona-clothing">
+                <h2>clothing</h2>
+                <ul>
+                    <li>white buttoned up blouse (#f4ecec) with a black ribbon</li>
+                    <li>pleated black skirt (#272625)</li>
+                    <li>knee thigh highs</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="persona-restrictions">
+                <h2>restriction on use</h2>
+                <p>The use, reproduction, adaptation, or portrayal
+                    of my persona is not permitted without my prior
+                    written consent. The persona may be used solely
+                    in connection with me and my work, and may not
+                    be adopted, imitated, or used by others as their
+                    own persona or for their personal use.</p>
+            </section>
+
         </main>
 
         <!--Global Footer-->

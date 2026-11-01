@@ -13,6 +13,15 @@
     border-bottom: 1px solid var(--text);
 }
 
+.grid-item-persona h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.grid-item-persona section+section {
+  margin-top: 48px;
+}
+
 #hero-persona {
     width: 100%;
     height: 100%;
