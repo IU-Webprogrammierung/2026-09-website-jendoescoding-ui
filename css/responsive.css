@@ -91,6 +91,9 @@
 
     .page-about .hero-frame-main,
     .page-persona .hero-frame-persona,
+    .page-videos .hero-frame-main,
+    .page-lyrics .hero-frame-main,
+    .page-equipment .hero-frame-main,
     .page-contact .hero-frame-contact {
         grid-column: 1 / 3;
         grid-row: 3;
@@ -101,6 +104,9 @@
 
     .page-about .grid-item-about,
     .page-persona .grid-item-persona,
+    .page-videos .videos-main,
+    .page-lyrics .grid-item-lyrics_list,
+    .page-equipment .grid-item-equipment,
     .page-contact .grid-item-contact {
         grid-column: 1 / 3;
         grid-row: 4;
@@ -112,10 +118,7 @@
     /* Content of Pages without Hero-Frames */
 
     .page-music .hero-frame-new,
-    .page-videos .videos-main,
-    .page-lyrics .grid-item-lyrics_list,
     .page-goodguy .grid-item-lyrics,
-    .page-equipment .grid-item-equipment,
     .page-policy .grid-item-policy {
         grid-column: 1 / 3;
         grid-row: 3;
