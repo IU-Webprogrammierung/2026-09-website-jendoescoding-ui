@@ -1,5 +1,13 @@
 /* Menüpunkt: Lyrics (List) */
 
+.hero-frame-main {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+
+  overflow: hidden;
+  min-height: 0;
+}
+
 .grid-item-lyrics_list {
   grid-column: 2 / 4;
   grid-row: 1 / 4;

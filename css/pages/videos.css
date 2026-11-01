@@ -2,12 +2,20 @@
 
 .videos-main {
     grid-column: 2 / 4;
-    grid-row: 1 / 4;
+    grid-row: 2 / 4;
     min-height: 0;
     padding: 20px 50px;
 
     display: flex;
     flex-direction: column;
+}
+
+.hero-frame-main {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+
+    overflow: hidden;
+    min-height: 0;
 }
 
 .videos-title {

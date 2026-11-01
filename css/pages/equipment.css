@@ -1,8 +1,16 @@
 /* Menüpunkt: Equipment */
 
+.hero-frame-main {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+
+  overflow: hidden;
+  min-height: 0;
+}
+
 .grid-item-equipment {
   grid-column: 2 / 4;
-  grid-row: 1 / 4;
+  grid-row: 2 / 4;
 
   padding: 48px;
   align-self: center;
@@ -16,7 +24,7 @@
   border-bottom: 1px solid var(--text);
 }
 
-.equipment-groups section + section {
+.equipment-groups section+section {
   margin-top: 48px;
 }
 
