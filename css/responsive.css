@@ -1,174 +1,185 @@
-/* Grundgerüst für Mobile / Tablet: bis 800px Breite */
+/* Mobile / Tablet: bis 50em (800px) */
 
-@media (max-width: 800px) {
+@media (max-width: 50em) {
 
-    .grid-container {
-        position: relative;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto 1fr;
+  .grid-container {
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    height: 100dvh;
+    grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+    --content-row: 4;
+    --footer-row: 5;
+  }
+
+  .page-music .grid-container,
+  .page-goodguy .grid-container,
+  .page-policy .grid-container,
+  .page-home .grid-container {
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    --content-row: 3;
+    --footer-row: 4;
+  }
+
+
+  /* Header */
+
+  .grid-nav-logo {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    justify-self: center;
+    position: relative;
+    padding: 0.75rem 1rem 0;
+  }
+
+  #logo-main {
+    width: 6.25rem;
+  }
+
+  .grid-nav {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem 0.5rem;
+    background: var(--bg);
+
+    & a {
+      padding: 0.75rem 1rem;
     }
+  }
 
-    .page-home .grid-container {
-        height: 100dvh;
+  .dropdown,
+  .dropdown-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .dropdown-content {
+    max-height: none;
+    overflow: visible;
+
+    & a {
+      padding: 0.75rem 1rem;
+      opacity: 1;
+      transform: none;
     }
+  }
 
-    .grid-nav-logo {
-        grid-column: 1 / 3;
-        grid-row: 1;
 
-        justify-self: center;
-        position: relative;
-        padding: 12px 16px 0;
+  /* Footer und Pfeile */
+
+  .grid-footer {
+    grid-column: 1 / 3;
+    grid-row: var(--footer-row);
+    align-self: end;
+    padding: 1rem 5.5rem;
+    text-align: center;
+  }
+
+  .grid-arrow-back,
+  .grid-arrow-forward {
+    grid-row: var(--footer-row);
+    align-self: center;
+  }
+
+  .grid-arrow-back { grid-column: 1; justify-self: start; }
+  .grid-arrow-forward { grid-column: 2; justify-self: end; }
+
+
+  /* Startseite, 404, Success w/ Hero */
+
+  #hero-main {
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+  }
+
+
+  /* With Hero-Frame */
+
+  .page-about .hero-frame-main,
+  .page-persona .hero-frame-persona,
+  .page-videos .hero-frame-main,
+  .page-lyrics .hero-frame-main,
+  .page-equipment .hero-frame-main,
+  .page-contact .hero-frame-contact {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    height: 20vh;
+    min-height: 7.5rem;
+  }
+
+
+  /* Scrolling */
+
+  .page-about .grid-item-about,
+  .page-persona .grid-item-persona,
+  .page-videos .videos-main,
+  .page-lyrics .grid-item-lyrics_list,
+  .page-equipment .grid-item-equipment,
+  .page-contact .grid-item-contact,
+  .page-goodguy .grid-item-lyrics,
+  .page-policy .grid-item-policy {
+    grid-column: 1 / 3;
+    grid-row: var(--content-row);
+    align-self: stretch;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 1.5rem;
+  }
+
+  .page-videos .video-list {
+    grid-template-columns: 1fr;
+    padding-bottom: 1.5rem;
+  }
+
+
+  /* Music */
+
+  .page-music .hero-frame-new,
+  .page-music .grid-item-new {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+
+  .page-music .grid-item-new {
+    align-self: center;
+  }
+
+  .page-music .motion-toggle {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    align-self: start;
+    margin: 1rem;
+  }
+
+
+  /* About */
+
+  .page-about #sitting-jen {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    justify-self: end;
+    align-self: end;
+    width: 7.5rem;
+    padding: 0 1rem 0 0;
+    transform: none;
+    z-index: 2;
+  }
+
+  .page-about .streaming-services {
+    --icon-size: 2.5rem;
+    flex-wrap: nowrap;
+    margin: 1.5rem 0 0;
+    padding: 0;
+
+    & a {
+      margin: 0;
+      padding: 0.625rem;
     }
-
-    #logo-main {
-        width: 100px;
-    }
-
-    .grid-nav {
-        grid-column: 1 / 3;
-
-        position: relative;
-        z-index: 2;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 8px 8px;
-        background: var(--bg);
-
-        align-items: center;
-        justify-content: center;
-    }
-
-    .dropdown {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .dropdown-content {
-        display: flex;
-        max-height: none;
-        overflow: visible;
-    }
-
-    .grid-nav .dropdown-content a {
-        padding: 12px 16px;
-        opacity: 1;
-        transform: none;
-    }
-
-    #hero-main {
-        grid-row: 2 / 4;
-        grid-column: 1 / 3;
-    }
-
-    .grid-footer {
-        grid-column: 1 / 3;
-        grid-row: 5;
-
-        align-self: end;
-        padding: 16px 72px;
-
-        text-align: center;
-    }
-
-    .grid-arrow-back {
-        grid-row: 5;
-        grid-column: 1;
-
-        justify-self: start;
-    }
-
-    .grid-arrow-forward {
-        grid-row: 5;
-        grid-column: 2;
-
-        justify-self: end;
-    }
-
-
-    /* Pages with Hero-Frames */
-
-    .page-about .hero-frame-main,
-    .page-persona .hero-frame-persona,
-    .page-videos .hero-frame-main,
-    .page-lyrics .hero-frame-main,
-    .page-equipment .hero-frame-main,
-    .page-contact .hero-frame-contact {
-        grid-column: 1 / 3;
-        grid-row: 3;
-        height: 20vh;
-    }
-
-    /* Content of Pages with Hero-Frames */
-
-    .page-about .grid-item-about,
-    .page-persona .grid-item-persona,
-    .page-videos .videos-main,
-    .page-lyrics .grid-item-lyrics_list,
-    .page-equipment .grid-item-equipment,
-    .page-contact .grid-item-contact {
-        grid-column: 1 / 3;
-        grid-row: 4;
-        padding: 50px 50px;
-        align-self: stretch;
-        overflow-y: auto;
-    }
-
-    /* Content of Pages without Hero-Frames */
-
-    .page-music .hero-frame-new,
-    .page-goodguy .grid-item-lyrics,
-    .page-policy .grid-item-policy {
-        grid-column: 1 / 3;
-        grid-row: 3;
-        overflow-y: auto;
-    }
-
-    .page-music .grid-item-new {
-        grid-column: 1 / 3;
-        grid-row: 3;
-        align-self: center;
-    }
-
-
-    /* Music BG toggle */
-
-    .page-music .motion-toggle {
-        grid-column: 1 / 3;
-        grid-row: 3;
-        align-self: start;
-        margin: 16px;
-    }
-
-    .page-about #sitting-jen {
-        grid-column: 1 / 3;
-        grid-row: 3;
-
-        padding: 20px;
-        transform: translateY(0px);
-        width: 120px;
-        z-index: 2;
-
-        justify-self: end;
-        align-self: end;
-    }
-
-    /* Streaming-Services */
-
-    .page-about .streaming-services {
-        --icon-size: 40px;
-
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        margin: 24px 0 0;
-        padding: 0;
-        list-style: none;
-    }
-
-    .page-about .streaming-services a {
-        margin: 0;
-        padding: 10px;
-    }
+  }
 }
