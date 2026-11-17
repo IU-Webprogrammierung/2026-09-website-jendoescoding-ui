@@ -16,18 +16,6 @@
   overflow-y: auto;
 }
 
-.page-header {
-    margin: 32px 0 32px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--text);
-}
-
-.page-header h1 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
 .equipment-groups section+section {
   margin-top: 48px;
 }
