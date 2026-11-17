@@ -59,3 +59,12 @@ document.body.addEventListener("htmx:afterSettle", () => {
         }
     });
 });
+
+
+/* Validation for Contact Form */
+
+const check = document.getElementById("privacy-check");
+check?.addEventListener("invalid", () => {
+    check.setCustomValidity("Please confirm the privacy policy to send your message.");
+});
+check?.addEventListener("change", () => check.setCustomValidity(""));
