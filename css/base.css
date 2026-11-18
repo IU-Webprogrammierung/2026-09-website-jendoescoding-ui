@@ -46,12 +46,13 @@ html,
 body {
   margin: 0;
   height: 100%;
+  overflow: hidden;
   background: var(--bg);
   color: var(--text);
 }
 
 .grid-container {
-  height: 100vh;
+  height: 100dvh;
   display: grid;
   grid-template-columns: 12.5rem 1fr 1fr;
   grid-template-rows: repeat(3, minmax(0, 1fr));
