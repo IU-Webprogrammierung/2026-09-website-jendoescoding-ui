@@ -5,9 +5,8 @@
   .grid-container {
     position: relative;
     grid-template-columns: 1fr 1fr;
-    height: auto;
-    min-height: 100dvh;
-    grid-template-rows: auto auto auto 1fr auto;
+    height: 100dvh;
+    grid-template-rows: auto auto auto minmax(0, 1fr) auto;
     --content-row: 4;
     --footer-row: 5;
   }
@@ -16,7 +15,7 @@
   .page-goodguy .grid-container,
   .page-policy .grid-container,
   .page-home .grid-container {
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
     --content-row: 3;
     --footer-row: 4;
   }
@@ -82,7 +81,9 @@
   .grid-footer {
     grid-column: 1 / 3;
     grid-row: var(--footer-row);
-    align-self: end;
+    align-self: stretch;
+    z-index: 3;
+    background: var(--bg);
     padding: 1rem 5.5rem;
     text-align: center;
   }
@@ -91,6 +92,7 @@
   .grid-arrow-forward {
     grid-row: var(--footer-row);
     align-self: center;
+    z-index: 4;
   }
 
   .grid-arrow-back { grid-column: 1; justify-self: start; }
@@ -102,6 +104,9 @@
   #hero-main {
     grid-column: 1 / 3;
     grid-row: 3 / 5;
+    min-height: 0;
+    height: 100%;
+    object-fit: cover;
   }
 
 
@@ -137,7 +142,8 @@
     grid-column: 1 / 3;
     grid-row: var(--content-row);
     align-self: stretch;
-    overflow: visible;
+    min-height: 0;
+    overflow-y: auto;
     padding: 1.5rem;
   }
 

@@ -3,6 +3,7 @@
 .grid-item-policy {
   grid-column: 2 / 4;
   grid-row: 1 / 4;
+  min-height: 0;
   overflow-y: auto;
 
   padding: 48px;

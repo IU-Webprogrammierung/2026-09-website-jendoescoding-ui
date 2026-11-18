@@ -3,11 +3,12 @@
 .videos-main {
     grid-column: 2 / 4;
     grid-row: 2 / 4;
-    min-height: 0;
+
     padding: 48px;
 
     display: flex;
     flex-direction: column;
+    min-height: 0;
     overflow-y: auto;
 }
 

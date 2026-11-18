@@ -4,8 +4,8 @@
   grid-column: 2 / 4;
   grid-row: 1 / 2;
 
-  overflow: hidden;
   min-height: 0;
+  overflow-y: auto;
 }
 
 .grid-item-equipment {
