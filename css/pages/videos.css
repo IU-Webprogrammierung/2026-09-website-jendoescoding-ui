@@ -1,13 +1,8 @@
 /* Menüpunkt: Videos */
 
-.hero-frame-main {
-  grid-column: 2 / 4;
-  grid-row: 1;
-}
-
 .videos-main {
   grid-column: 2 / 4;
-  grid-row: 2 / 4;
+  grid-row: 1 / 4;
   min-height: 0;
   overflow-y: auto;
   padding: 3rem 3rem 6rem;
@@ -68,10 +63,6 @@
     width: 2.75rem;
     height: 2.75rem;
     transition: transform 0.2s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
   & img {
