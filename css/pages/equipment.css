@@ -1,19 +1,25 @@
 /* Menüpunkt: Equipment */
 
 .hero-frame-main {
-  grid-column: 2 / 4;
-  grid-row: 1 / 2;
+  grid-column: 3;
+  grid-row: 1 / 4;
+}
 
-  min-height: 0;
-  overflow-y: auto;
+#hero-equipment {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% center;
+  display: block;
 }
 
 .grid-item-equipment {
-  grid-column: 2 / 4;
-  grid-row: 2 / 4;
+  grid-column: 2;
+  grid-row: 1 / 4;
 
-  padding: 48px;
+  padding: 3rem 3rem 6rem;
   overflow-y: auto;
+  align-content: center;
 }
 
 .equipment-groups section+section {
@@ -28,6 +34,6 @@
 .equipment-groups li {
   display: flex;
   justify-content: space-between;
-  padding: 16px 4px;
+  padding: 0.5em;
   border-bottom: 1px solid rgba(45, 44, 42, 0.25);
 }

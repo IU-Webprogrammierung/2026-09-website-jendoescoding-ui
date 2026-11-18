@@ -8,60 +8,57 @@
   min-height: 0;
 }
 
+#hero-aot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .grid-item-lyrics_list {
   grid-column: 2 / 4;
   grid-row: 2 / 4;
-
-  padding: 48px;
-  overflow-y: auto;
   min-height: 0;
-}
+  overflow-y: auto;
+  padding: 3rem 3rem 6rem;
 
-.grid-item-lyrics_list ul {
-  columns: 2 320px;
-  column-gap: 48px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+  & ul {
+    columns: 2 20rem;
+    column-gap: 3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-.grid-item-lyrics_list li {
-  counter-increment: song;
-  border-bottom: 1px solid rgba(45, 44, 42, 0.25);
-}
+  & li {
+    counter-increment: song;
+    border-bottom: 1px solid rgba(45, 44, 42, 0.25);
+  }
 
-.grid-item-lyrics_list li>a,
-.grid-item-lyrics_list li>span {
-  display: flex;
-  align-items: baseline;
-  gap: 16px;
-  padding: 16px 4px;
+  & li>a,
+  & li>span {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1rem 0.25rem;
+    color: var(--text);
+    text-decoration: none;
+    transition: padding-left 0.2s, background-color 0.2s;
 
-  color: var(--text);
-  text-decoration: none;
-  transition: padding-left 0.2s, background-color 0.2s;
-}
+    &::before {
+      content: counter(song, decimal-leading-zero);
+      flex: none;
+      opacity: 0.6;
+    }
+  }
 
-.grid-item-lyrics_list li>a::before,
-.grid-item-lyrics_list li>span::before {
-  content: counter(song, decimal-leading-zero);
-  flex: none;
-
-  opacity: 0.6;
-}
-
-.grid-item-lyrics_list li>a:hover {
-  padding-left: 16px;
-  background-color: rgba(45, 44, 42, 0.06);
+  & li>a:hover {
+    padding-left: 1rem;
+    background-color: rgba(45, 44, 42, 0.06);
+  }
 }
 
 .coming-soon small {
   margin-left: auto;
-
   opacity: 0.6;
-}
-
-#lyrics-idol,
-#four-am {
-  text-transform: uppercase;
 }
