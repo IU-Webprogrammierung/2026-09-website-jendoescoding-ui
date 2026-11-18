@@ -68,3 +68,46 @@ check?.addEventListener("invalid", () => {
     check.setCustomValidity("Please confirm the privacy policy to send your message.");
 });
 check?.addEventListener("change", () => check.setCustomValidity(""));
+
+
+/* Video Player */
+
+const player = document.getElementById("video-player");
+
+if (player) {
+    const title = document.getElementById("video-title");
+    const role = document.getElementById("video-role");
+    const links = document.getElementById("video-links");
+    const thumbs = document.querySelectorAll(".video-thumb");
+
+    const services = [
+        { key: "spotify", name: "Spotify", icon: "spotify.svg" },
+        { key: "apple", name: "Apple Music", icon: "applemusic.svg" },
+        { key: "soundcloud", name: "SoundCloud", icon: "soundcloud.svg" }
+    ];
+
+    function showVideo(btn, autoplay) {
+        player.src = "https://www.youtube.com/embed/" + btn.dataset.id + (autoplay ? "?autoplay=1" : "");
+        player.title = "Video: " + btn.dataset.title + ", a cover by jen";
+        title.textContent = btn.dataset.title;
+        role.innerHTML = btn.dataset.role;
+
+        // Streaming-Icons neu aufbauen (nur die, die es gibt)
+        links.innerHTML = "";
+        services.forEach((s) => {
+            const url = btn.dataset[s.key];
+            if (!url) return;
+            const li = document.createElement("li");
+            li.innerHTML = `<a href="${url}" target="_blank" rel="noopener noreferrer">
+                <img src="assets/icons/${s.icon}" alt="">
+                <span class="visually-hidden">${s.name} (opens in a new tab)</span></a>`;
+            links.appendChild(li);
+        });
+
+        thumbs.forEach((b) => b.removeAttribute("aria-current"));
+        btn.setAttribute("aria-current", "true");
+    }
+
+    thumbs.forEach((btn) => btn.addEventListener("click", () => showVideo(btn, true)));
+    showVideo(thumbs[0], false);   // Startzustand
+}
