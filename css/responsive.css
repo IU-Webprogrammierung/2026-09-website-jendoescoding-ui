@@ -20,7 +20,8 @@
     --footer-row: 4;
   }
 
-  /* Startseite: Bild füllt genau den Bildschirm */
+  /* Startseite */
+
   .page-home .grid-container {
     height: 100dvh;
   }
@@ -38,6 +39,10 @@
 
   #logo-main {
     width: 6.25rem;
+  }
+
+  #sitting-jen {
+    opacity: 0;
   }
 
   .grid-nav {
@@ -136,7 +141,7 @@
   }
 
 
-  /* Inhalt: kein eigener Scrollbereich, die Seite scrollt */
+  /* Inhalt */
 
   .page-about .grid-item-about,
   .page-persona .grid-item-persona,
@@ -160,6 +165,7 @@
   }
 
   /* Equipment Overview */
+
   .page-equipment .equipment-groups li {
     flex-direction: column;
     align-items: flex-start;
@@ -247,24 +253,15 @@
   .page-lyrics .hero-frame-main,
   .page-equipment .hero-frame-main,
   .page-contact .hero-frame-contact {
-    height: 10vh;
-    min-height: 4rem;
+    height: 20vh;
+    min-height: 1rem;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .page-header {
     margin-bottom: 1rem;
-  }
-
-  .grid-footer {
-    padding: 0.25rem 4rem;
-
-    & p {
-      margin: 0.125rem 0;
-      font-size: 0.6875rem;
-    }
   }
 }
