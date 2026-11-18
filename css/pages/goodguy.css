@@ -1,16 +1,19 @@
 /* Menüpunkt: Lyrics - Good Guy */
 
 .lyrics-video {
-  max-width: 720px;
-  padding-top: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  max-width: 45rem;
+  padding: 1rem 0;
+  background: var(--bg);
 }
 
 .lyrics-video iframe {
-  display: block;
-  width: 100%;
+  max-height: 40vh;
   aspect-ratio: 16 / 9;
-  height: auto;
-  border: 0;
+  width: auto;
+  max-width: 100%;
 }
 
 .grid-item-lyrics {
