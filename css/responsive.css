@@ -128,7 +128,7 @@
   .page-persona .hero-frame-persona,
   .page-videos .hero-frame-main,
   .page-lyrics .hero-frame-main,
-  .page-equipment .hero-frame-main,
+  .page-equipment .hero-frame-equipment,
   .page-contact .hero-frame-contact {
     grid-column: 1 / 3;
     grid-row: 3;
@@ -258,7 +258,7 @@
   .page-persona .hero-frame-persona,
   .page-videos .hero-frame-main,
   .page-lyrics .hero-frame-main,
-  .page-equipment .hero-frame-main,
+  .page-equipment .hero-frame-equipment,
   .page-contact .hero-frame-contact {
     height: 20vh;
     min-height: 1rem;
