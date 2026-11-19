@@ -411,3 +411,33 @@ body:has(.is-dragged) .hero-frame-main {
 .theme-toggle:hover {
     transform: scale(1.1);
 }
+
+/* View Illustration (Persona & Equipment) */
+
+.hero-frame-persona,
+.hero-frame-equipment {
+  position: relative;
+}
+
+/* Hover-Feedback on Hero */
+
+.hero-frame-persona img,
+.hero-frame-equipment img {
+  cursor: zoom-in;
+  transition: filter 0.6s;
+}
+
+.hero-frame-persona:hover img,
+.hero-frame-equipment:hover img {
+  filter: brightness(1.1);
+}
+
+.panel-hidden .hero-frame-persona,
+.panel-hidden .hero-frame-equipment {
+  grid-column: 2 / 4;
+}
+
+.panel-hidden .hero-frame-persona img,
+.panel-hidden .hero-frame-equipment img {
+  cursor: zoom-out;
+}

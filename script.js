@@ -140,3 +140,23 @@ document.body.addEventListener("htmx:afterSettle", () => {
     document.querySelector(".theme-toggle")
         ?.setAttribute("aria-pressed", String(currentTheme() === "dark"));
 });
+
+
+/* View Illustration (Persona & Equipment) */
+
+const expandBtn = document.querySelector(".image-expand");
+
+if (expandBtn) {
+    const label = expandBtn.querySelector(".image-expand-label");
+    const icon = expandBtn.querySelector("[aria-hidden]");
+
+    const toggle = () => {
+        const full = document.body.classList.toggle("panel-hidden");
+        expandBtn.setAttribute("aria-expanded", String(full));
+        label.textContent = full ? "Show text" : "View full illustration";
+        icon.textContent = full ? "⤡" : "⤢";
+    };
+
+    expandBtn.addEventListener("click", toggle);
+    expandBtn.closest("figure").querySelector("img").addEventListener("click", toggle);
+}

@@ -30,16 +30,23 @@
 <body class="page-persona">
 
     <div class="grid-container">
+        <dialog class="image-dialog" id="image-dialog" aria-label="Full illustration">
+            <img src="assets/fallingjen.jpg" alt="jen falling, full illustration">
+            <button type="button" class="image-dialog-close">Close</button>
+        </dialog>
 
         <!--Global Navigation & Hero Image-->
 
         <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
-        <figure class="hero-frame-persona"><img src="assets/fallingjen.jpg" alt="jen falling" id="hero-persona">
+        <figure class="hero-frame-persona">
+            <img src="assets/fallingjen.jpg" alt="jen falling" id="hero-persona">
+            <button type="button" class="image-expand" aria-expanded="false" aria-controls="panel-text">
+            </button>
         </figure>
 
         <!--Content of Page-->
 
-        <main class="grid-item-persona">
+        <main class="grid-item-persona" id="panel-text">
 
             <header class="page-header">
                 <h1>persona</h1>

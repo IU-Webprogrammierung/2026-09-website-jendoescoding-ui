@@ -35,13 +35,16 @@
 
         <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
 
-        <figure class="hero-frame-main"><img src="assets/singingjen.jpg" alt="Jen is singing on a stage"
-                id="hero-equipment">
+        <figure class="hero-frame-equipment">
+            <img src="assets/singingjen.jpg" alt="Jen is singing on a stage" id="hero-equipment">
+            <button type="button" class="image-expand" aria-expanded="false" aria-controls="panel-text">
+            </button>
         </figure>
 
         <!--Page Content-->
 
-        <main class="grid-item-equipment">
+        <main class="grid-item-equipment" id="panel-text">
+
             <header class="page-header">
                 <h1>equipment</h1>
             </header>
