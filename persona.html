@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Favicon-->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.svg">
 
     <!--CSS-->
     <link rel="stylesheet" href="css/base.css">
@@ -35,12 +35,12 @@
     <div class="grid-container">
         <dialog class="image-dialog" id="image-dialog" aria-label="Full illustration">
             <img src="assets/fallingjen.jpg" alt="jen falling, full illustration">
-            <button type="button" class="image-dialog-close">Close</button>
         </dialog>
 
         <!--Global Navigation & Hero Image-->
 
         <div hx-get="htmx-components/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
+        
         <figure class="hero-frame-persona">
             <img src="assets/fallingjen.jpg" alt="jen falling" id="hero-persona">
             <button type="button" class="image-expand" aria-expanded="false" aria-controls="panel-text">

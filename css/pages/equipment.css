@@ -5,14 +5,6 @@
   grid-row: 1 / 4;
 }
 
-#hero-equipment {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 10% center;
-  display: block;
-}
-
 .grid-item-equipment {
   grid-column: 2;
   grid-row: 1 / 4;
@@ -20,6 +12,14 @@
   padding: 3rem 3rem 6rem;
   overflow-y: auto;
   align-content: center;
+}
+
+#hero-equipment {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% center;
+  display: block;
 }
 
 .equipment-groups section+section {
