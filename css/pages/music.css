@@ -65,20 +65,17 @@
 .motion-toggle {
     grid-column: 2 / 4;
     grid-row: 1;
-    justify-self: end;
+    justify-self: start;
     align-self: start;
-    z-index: 5;
 
-    margin: 40px;
-    width: 48px;
-    height: 48px;
-    border: none;
+    margin: 0.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 1px solid var(--text);
     border-radius: 50%;
     background: var(--bg);
     color: var(--text);
-    font-size: 18px;
     cursor: pointer;
-    transition: transform 0.2s;
 }
 
 .motion-toggle:hover {
