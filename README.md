@@ -41,7 +41,7 @@ Anschließend wurden die zu Blatt gebrachten Skizzen und digitale aufbereiteten 
 - HTML
 - CSS
 
-### Offene To Do's
+### Offene To Do's nach dieser Phase
 - Breakpoints definieren
 - Geplante Seitenstruktur prüfen
 - Navigationsmöglichkeiten definieren
