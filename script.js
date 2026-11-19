@@ -153,8 +153,6 @@ if (expandBtn) {
     const toggle = () => {
         const full = document.body.classList.toggle("panel-hidden");
         expandBtn.setAttribute("aria-expanded", String(full));
-        label.textContent = full ? "Show text" : "View full illustration";
-        icon.textContent = full ? "⤡" : "⤢";
     };
 
     expandBtn.addEventListener("click", toggle);
