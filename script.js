@@ -111,3 +111,32 @@ if (player) {
     thumbs.forEach((btn) => btn.addEventListener("click", () => showVideo(btn, true)));
     showVideo(thumbs[0], false);   // Startzustand
 }
+
+
+/* Dark Mode */
+
+const root = document.documentElement;
+const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+function currentTheme() {
+    return root.dataset.theme || (systemDark.matches ? "dark" : "light");
+}
+
+try {
+    const saved = localStorage.getItem("theme");
+    if (saved) root.dataset.theme = saved;
+} catch (e) { }
+
+document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".theme-toggle");
+    if (!btn) return;
+    const next = currentTheme() === "dark" ? "light" : "dark";
+    root.dataset.theme = next;
+    btn.setAttribute("aria-pressed", String(next === "dark"));
+    try { localStorage.setItem("theme", next); } catch (e) { }
+});
+
+document.body.addEventListener("htmx:afterSettle", () => {
+    document.querySelector(".theme-toggle")
+        ?.setAttribute("aria-pressed", String(currentTheme() === "dark"));
+});
