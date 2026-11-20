@@ -182,6 +182,7 @@ const translations = {
         "persona.li2": "Schwarz (#272625) auf der linken Seite.",
         "persona.eyes": "Augen",
         "persona.p3": "Bläuliches Grün (#829a89)",
+        "persona.clothing": "Kleidung",
         "persona.li3": "Weiße, zugeknöpfte Bluse (#f4ecec) mit schwarzer Schleife",
         "persona.li4": "Schwarzer Faltenrock (#272625)",
         "persona.li5": "Overknee-Strümpfe",
