@@ -441,3 +441,29 @@ body:has(.is-dragged) .hero-frame-main {
 .panel-hidden .hero-frame-equipment img {
   cursor: zoom-out;
 }
+
+.lang-switch {
+  position: fixed;
+  top: 1rem;
+  right: 4.25rem;      /* links neben dem Theme-Schalter */
+  z-index: 10;
+  display: flex;
+  border: 1px solid var(--text);
+  border-radius: 62.5rem;
+  overflow: hidden;
+  background: var(--bg);
+
+  & button {
+    padding: 0.5rem 0.75rem;
+    min-width: 2.75rem;
+    color: var(--text);
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    &[aria-pressed="true"] {
+      color: var(--bg);
+      background: var(--text);
+    }
+  }
+}

@@ -48,30 +48,37 @@
         <main class="grid-item-contact">
 
             <header class="page-header">
-                <h1>Get in touch!</h1>
+                <h1 data-trans="contact.title">Get in touch!</h1>
             </header>
 
-            <p>All fields are required.</p>
+            <p data-trans="contact.p">All fields are required.</p>
 
             <form class="contact-form" action="success.html">
 
                 <label>
-                    <input type="text" id="yname" name="yname" placeholder="Your Name" required>
+                    <input type="text" id="yname" name="yname" placeholder="Your Name"
+                        data-trans-attr="placeholder:contact.name" required>
                 </label>
 
                 <label>
-                    <input type="email" id="email" name="email" autocomplete="email" placeholder="Your E-Mail" required>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="Your E-Mail"
+                        data-trans-attr="placeholder:contact.mail" required>
                 </label>
 
                 <label>
-                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message"
+                        data-trans-attr="placeholder:contact.message" required></textarea>
                 </label>
 
-                <button type="submit" class="button-link">Submit</button>
+                <button type="submit" class="button-link" data-trans="contact.submit">Submit</button>
+
                 <div class="form-field form-check">
                     <input type="checkbox" id="privacy-check" name="privacy-check" value="accepted" required>
-                    <label for="privacy-check">I’ve read the <a href="policy.html">privacy policy</a> and consent
-                        to my data being shared in order to get in touch with jen.</label>
+                    <label for="privacy-check">
+                        <span data-trans="contact.privacy.start">I’ve read the </span><a href="policy.html"
+                            data-trans="contact.privacy.link">privacy policy</a><span data-trans="contact.privacy.end">
+                            and consent to my data being shared in order to get in touch with jen.</span>
+                    </label>
                 </div>
 
             </form>
