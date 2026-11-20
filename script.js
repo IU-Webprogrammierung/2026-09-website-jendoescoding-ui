@@ -181,6 +181,7 @@ const translations = {
         "persona.li1": "Rot (#cd514d) auf der rechten Seite.",
         "persona.li2": "Schwarz (#272625) auf der linken Seite.",
         "persona.eyes": "Augen",
+        "persona.p2": "Runde Brille, Sommersprossen",
         "persona.p3": "Bläuliches Grün (#829a89)",
         "persona.clothing": "Kleidung",
         "persona.li3": "Weiße, zugeknöpfte Bluse (#f4ecec) mit schwarzer Schleife",
@@ -203,8 +204,8 @@ const translations = {
         /* EQUIPMENT */
         "equipment.guitar": "Akustik Guitarre",
         "equipment.recording": "Für's Aufnahmen",
-        "equipment.rec-vocals": "Für Stimmaufnahmen",
-        "equipment.rec-instruments": "Für Aufnahmen von Instrumenten",
+        "equipment.rec-vocals": "Mikrofon für Stimmaufnahmen",
+        "equipment.rec-instruments": "Mikrofon für Instrumente",
         "equipment.editing": "Für's Editieren",
 
         /* CONTACT */
