@@ -31,8 +31,18 @@
     grid-column: 2 / 4;
     grid-row: 2 / 4;
 
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 3rem;
+    align-content: start;
+
     color: var(--text);
     padding: 3rem 3rem 6rem;
+}
+
+.grid-item-about h1,
+.grid-item-about .streaming-services {
+    grid-column: 1 / -1;
 }
 
 .streaming-services {
