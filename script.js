@@ -210,6 +210,7 @@ const translations = {
 
         /* CONTACT */
         "nav.contact": "kontakt",
+        "contact.p": "Alle Felder sind pflicht.",
         "contact.name": "Dein Name",
         "contact.mail": "Deine E-Mail-Adresse",
         "contact.message": "Deine Nachricht",
