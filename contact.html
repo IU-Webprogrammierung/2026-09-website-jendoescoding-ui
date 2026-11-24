@@ -51,21 +51,24 @@
                 <h1 data-trans="contact.title">Get in touch!</h1>
             </header>
 
-            <p data-trans="contact.p">All fields are required.</p>
+            <p data-trans="contact.p" aria-describedby="form-hint">All fields are required.</p>
 
             <form class="contact-form" action="success.html">
 
                 <label>
-                    <input type="text" id="yname" name="yname" placeholder="Your Name"
+                    <span class="visually-hidden" data-trans="contact.name.label">Your name</span>
+                    <input type="text" id="yname" name="yname" autocomplete="name" placeholder="Your Name"
                         data-trans-attr="placeholder:contact.name" required>
                 </label>
 
                 <label>
+                    <span class="visually-hidden" data-trans="contact.mail.label">Your e-mail</span>
                     <input type="email" id="email" name="email" autocomplete="email" placeholder="Your E-Mail"
                         data-trans-attr="placeholder:contact.mail" required>
                 </label>
 
                 <label>
+                    <span class="visually-hidden" data-trans="contact.message.label">Your message</span>
                     <textarea id="message" name="message" rows="6" placeholder="Your Message"
                         data-trans-attr="placeholder:contact.message" required></textarea>
                 </label>
