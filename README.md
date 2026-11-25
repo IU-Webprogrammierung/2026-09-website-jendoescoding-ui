@@ -4,6 +4,12 @@
 
 - [Über das Projekt](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Über-das-Projekt)
 - [Konzeptionsphase](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Konzeptionsphase)
+- [Logo](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Logo)
+- [Sitemap](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Sitemap)
+- [Skizzen](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Skizzen)
+- [Wireframes](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Wireframes)
+- [HTML & CSS](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#HTML-&-CSS)
+- [Konzept](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Konzept)
 - [Seitenübersicht](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Seitenübersicht)
 - [Erarbeitungsphase](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Erarbeitungsphase)
 
@@ -89,7 +95,7 @@ Nachdem sowohl die Side-Navigation, der Footer als auch die Navigation mittels P
 
 #### Seiten & Inhalte
 
-| Page | Content
+| Page | Content |
 |------|-----|-----|
 | Startseite | Hero-Bild über die gesamte Inhaltsfläche |
 | Über Mich | Zweispaltiger Text, Streaming-Icons mit Links, sitzende Jen auf Frame |
@@ -108,7 +114,7 @@ Mit jeder Seite und neuen Idee wuchs styles.css sowohl mit Grundlagen als auch i
 
 #### CSS-Dateien & Inhalte
 
-| File | Content
+| File | Content |
 |------|-----|-----|
 | base.css | Grundraster inkl. Farbschema, Schrift und Layout von Navigation und Footer |
 | responsive.css | |
