@@ -95,8 +95,8 @@ Nachdem sowohl die Side-Navigation, der Footer als auch die Navigation mittels P
 
 #### Seiten & Inhalte
 
-| Page | Content |
-|------|-----|-----|
+| Page | Content
+|------|-----|
 | Startseite | Hero-Bild über die gesamte Inhaltsfläche |
 | Über Mich | Zweispaltiger Text, Streaming-Icons mit Links, sitzende Jen auf Frame |
 | Persona | Eine zentrale Illustration als Referenz inkl. Farbwerten und Nutzungsbeschränkung |
@@ -114,8 +114,8 @@ Mit jeder Seite und neuen Idee wuchs styles.css sowohl mit Grundlagen als auch i
 
 #### CSS-Dateien & Inhalte
 
-| File | Content |
-|------|-----|-----|
+| File | Content
+|------|-----|
 | base.css | Grundraster inkl. Farbschema, Schrift und Layout von Navigation und Footer |
 | responsive.css | |
 | about.css | |
