@@ -1,43 +1,31 @@
 # Creative Lab: Web-Programmierung (DLBUXPWP01)
 
-## Inhaltsverzeichnis
+Eine responsive Website für die Künstlerpersona [jen](https://www.youtube.com/@xunreachablee), umgesetzt im Rahmen des Creative Labs „Web-Programmierung“ für den B.A. UX-Design an der IU Internationale Hochschule. Das Gestaltungskonzept orientiert sich an einem Album-Booklet und verbindet Inhalte mit Illustrationen mittels eines Bento-Grid-Layout.
 
-- [Über das Projekt](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Über-das-Projekt)
-- [Konzeptionsphase](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Konzeptionsphase)
-- [Logo](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Logo)
-- [Sitemap](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Sitemap)
-- [Skizzen](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Skizzen)
-- [Wireframes](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Wireframes)
-- [HTML & CSS](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#HTML-&-CSS)
-- [Konzept](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Konzept)
-- [Seitenübersicht](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Seitenübersicht)
-- [Erarbeitungsphase](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Erarbeitungsphase)
+Technologien: HTML, CSS, JavaScript und HTMX
+[Live-Pages](https://iu-webprogrammierung.github.io/2026-09-website-jendoescoding-ui/) · [Figma-Datei](https://www.figma.com/design/ebjMQUW34owW2KuN6oWJDJ/Web-Programmierung?node-id=0-1&t=KXtZlQXSAG1KD8rG-1)
 
-<br>
+___
 
-## Über das Projekt
-Als Prüfungsleistung für das 3-monatige Creative Lab "Web-Programmierung" an der IU Internationale Hochschule wurde ein responsiver, persönlicher Webauftritt für die Künstlerpersona [jen](https://www.youtube.com/@xunreachablee) mithilfe von HTML, CSS und JavaSript erarbeitet.
-
-Bei dieser Persona handelt es sich um meine eigene, die ich seit über einem Jahrzehnt auf verschiedenen Streamingplattformen und Social-Media-Kanälen musikalisch aufbaue. Mit meiner eigenen Brand Identity habe ich mich zu dem Zeitpunkt des Labs kaum bis gar nicht auseinandergesetzt, wodurch diese Prüfungsleistung die ideale Gelegenheit bot, mich sowohl persönlich als auch professionell weiterzuentwickeln.
-
-Für einen reibungslosen Ablauf des Projekts wurde dieses in insgesamt drei Phase unterteilt:
+### Inhaltsverzeichnis
 
 - [Konzeptionsphase](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Konzeptionsphase)
 - [Erarbeitungsphase](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Erarbeitungsphase)
 - [Finalisierungsphase](https://github.com/IU-Webprogrammierung/2026-09-website-jendoescoding-ui#Finalisierungsphase)
 
-<br>
+___
+
 
 ## Konzeptionsphase
-In diese Phase wurde ein sinniges Thema für meine Künstlerpersona erarbeitet. In dem Zuge wurden verschiedene Illustrationen, die für vergangene Releases verwendet wurden gesammelt und ein visuell passendes (heroimagejen.avif) als Stilrichtung ausgewählt.
+In dieser Phase wurde ein sinniges Konzept für meine Künstlerpersona erarbeitet. In dem Zuge wurden verschiedene Illustrationen, die für vergangene Releases verwendet wurden gesammelt und ein visuell passendes (heroimagejen.avif) als Stilrichtung ausgewählt.
 
-### Logo
+#### Logo
 Nach der Auswahl des Hero-Bildes habe ich mich zum allerersten Mal mit der Gestaltung eines eigenen Logos beschäftigt. Von Beginn an wollte ich ein klares, cleanes Design, das auch in kleiner Größe gut lesbar und erkennbar bleibt, etwa bei künftigen Releases oder als Wasserzeichen unten rechts in Videos.
 
 Damit das Logo nicht bloß meinen Künstlernamen in gewöhnlicher Schreibweise zeigt, habe ich iterativ mit der Anordnung der Buchstaben experimentiert. Das Ergebnis wirkt spielerisch und bleibt dennoch klar: Das "j" lehnt sich an das "e" und schiebt es an das "n", sodass die Buchstaben ineinandergreifen. Der Anfang des "n" läuft dabei serifenartig in das "e" hinein. So wird im Logo Bewegung erzeugt und der erste Grundstein für die stilistische Richtung der Brand Identity gelegt.
 
 
-### Sitemap
+#### Sitemap
 In dem selben Gedankengang rund um ein persönliches Logo wurde in dieser Phase ebenfalls angestoßen, welche Inhalte für einen persönlichen Webauftritt relevant und auch wirklich interessant für verschiedene Nutzergruppen wie u.a. Fans, Business Partners oder Interessenten wären. Um dies zu konkretisieren wurde über Notion eine Liste mit infrage kommenden Inhalten erarbeitet, die umfangreicher als zuvorderst gedacht wurde. Von einer Fotogalerie von vergangenen Live-Auftritten bis hinzu einer kleinen Ecke für meine Golden Retriever Hündin war gefühlt einmal alles dabei.
 
 Um die wichtigsten Menüpunkte festzuhalten und diese einmal innerhalb einer Struktur auf die Probe zu stellen, wurde eine Sitemap erstellt. Diese bestand aus den folgenden Menüpunkten bzw. Seiten:
@@ -61,36 +49,32 @@ Um die wichtigsten Menüpunkte festzuhalten und diese einmal innerhalb einer Str
 
 Die entstandene Informationsarchitektur ist als Netzstruktur angelegt: Von jeder Seite aus kann beliebig zu den anderen Hauptmenüpunkten gesprungen werden.
 
-### Skizzen
+#### Skizzen
 Nachdem die zu erarbeiteten Seiten klar waren, wurde sich mit der Erstellung von Skizzen beschäftigt. Für diese wurden zunächst Layouts über Pinterest recherchiert, wodurch die Idee eines Album Booklets aufkam. Denn Album Booklets sind die ideale Möglichkeit, um mithilfe von Layouts und bewusst gewählten dekorativen Elementen zu experimentieren und die Identität eines Songs und/oder Künstlers widerzuspiegeln.
 
 An diesen Gedanken anschließend wurde gezielt Album Booklets recherchiert, um Gestaltungslösungen anzustoßen und passende zu Papier (bzw. auf einem digitalen Canvas) zu bringen. Da bereits in der Aufgabenstellung die Themen Flexbox und Grid angerissen wurden, ergab sich hier nach erneuter Recherche, dass das sogenannte Bento-Grid die ideale Lösung für das von mir angestrebte Konzepts darstellte.
 
-### Wireframes
+#### Wireframes
 Nach Erstellung der Skizzen wurden diese als Wireframes in [Figma](https://www.figma.com/design/ebjMQUW34owW2KuN6oWJDJ/Web-Programmierung?node-id=0-1&t=KXtZlQXSAG1KD8rG-1) und zunächst nur für Desktop vollständig realisiert. Dabei wurde ersichtlich, dass die primären Menüpunkte "About" und "Music" per Dropdown zu den sekundären Menüpunkten "Persona", "Videos" und "Lyrics" führen sollen, um so eine sinnige Struktur zu schaffen. Bei sowohl der Erstellung der Skizzen als auch dem "Proof of Concept" durch Wireframes wurde klar, dass vorherige Ideen wie bspw. die Galerie passiv eingebracht werden können, indem auf (fast) jeder Seite ein sogenannter Hero-Frame eingebracht wird, der bewusst ausgewählte Illustrationen aufgreift. So soll jede Seite sowohl durch den Inhalt als auch einem dekorativ Element wie u.a. des Frames einem Thema folgen; also ähnlich wie bei einem Booklet. 
 
-### HTML & CSS
+#### HTML & CSS
 Der letzte Schritt dieser Phase war die grobe Überführung aller erstellten Artefakte in HTML & CSS durch Visual Studio Code. Mithilfe des ersten Live-Tutoriums konnte in diesem Schritt auf Github aufgesetzt werden, um die ersten Commits inkl. passender Nachrichten zu verfassen und die Webpräsenz per Pages ins Leben zu rufen
 
-### Konzept
-Abschließend konnte durch diese erste Phase das folgende Konzept konkretisiert werden:
-
-Für das Creative Lab für Web-Programmierung für eine persönliche Webpräsenz für die Künstlerpersona von [jen](https://www.youtube.com/@xunreachablee) angestrebt, welches stilistisch einem Album Booklet ähnelt. Die Präsenz besteht insgesamt aus 10 individuellen Seiten, die sich als primäre, sekundäre und teritiäre Navigation unterscheiden lassen. Begleitend zu allen Seiten werden verschiedene Illustrationen verwendet, die dekorativ die Hauptinhalte der jeweiligen Seiten begleiten.
-<br>
+___
 
 ## Erarbeitungsphase
-Nach Erhalt des Feedback von den Tutoren begann die Erarbeitungsphase. In dieser wurde das Konzept verfeinert, das persönliche Wissen über HTML und CSS erweitert und die Arbeitsweise im Verlauf der Phase reflektier; denn nachdem das Grundgerüst gebaut und alle weiteren To Do's ersichtlich wurden, wurde ebenfalls schnell klar, wie viel offen und zu tun war.
+Nach Erhalt des Feedback von den Tutoren begann die Erarbeitungsphase. In dieser wurde das Konzept verfeinert, das persönliche Wissen über HTML und CSS erweitert und die Arbeitsweise im Verlauf der Phase reflektiert; denn nachdem das Grundgerüst gebaut und alle weiteren To Do's ersichtlich wurden, wurde ebenfalls klar, wie viel wirklich offen und zu tun war.
 
 Da ich zu diesem Zeitpunkt noch nie solch eine Webpräsenz umgesetzt habe, wurde mit jedem Schritt deutlich, dass ich nicht alles auf einmal anfangen kann und möglicher Überforderung mit sinniger Planung entgegenwirken muss. Somit wurde sich neben dem Selbststudium bzgl. der Umsetzung auch mit Methoden wie u.a. der 80/20 Methode auseinandergesetzt, um die Workload überschaubar zu planen und das Endergebnis nicht aus den Augen zu verlieren.
 
-### Komponente, Dropdowns & Navigation
-Zunächst wurde sich im Rahmen des dritten Tutoriums mit HTMX auseinandergesetzt, um wiederkehrende Elemente wie bspw. den Footer und Header bzw. die Side-Navigation in Form von Komponenten verwenden zu können. Daran anschließend wurden die einzelnen Elemente weiter ausgebaut, indem u.a. Transitions, Dropdowns sowie die Pfeilnavigation geplant und folglich umgesetzt wurde.
+#### Komponente, Dropdowns & Navigation
+Zunächst wurde sich im Rahmen des dritten Tutoriums mit HTMX auseinandergesetzt, um wiederkehrende Elemente wie bspw. den Footer und Header bzw. die Side-Navigation in Form von Komponenten verwenden zu können. Daran anschließend wurden die einzelnen Elemente weiter ausgebaut, indem u.a. Transitions, Dropdowns sowie die Pfeilnavigation umgesetzt wurde.
 
-Beides wurde, da zu dem Zeitpunkt nur bedingte Kenntnisse in JavaScript vorlagen lediglich mit CSS gelöst. Um jedoch eine mit der Erarbeitung einhergehende Idee umzusetzen, musste sich mit js auseinandergesetzt werden: die Navigation mit Pfeiltasten, welche dem Durchblättern eines Booklets ähnelt.
+Alles  wurde, da zu dem Zeitpunkt nur bedingte Kenntnisse in JavaScript vorlagen lediglich mit CSS gelöst. Um jedoch eine mit der Erarbeitung einhergehende Idee umzusetzen, musste sich mit js auseinandergesetzt werden: die Navigation mit Pfeiltasten, welche dem Durchblättern eines Booklets ähnelt.
 
 Während der Umsetzung wurde die Webpräsenz stetig über den Browser geprüft. Dabei fiel auf, dass die Pfeilnavigation über js gesondert für das Kontaktformular funktionieren muss: denn sobald man etwas innerhalb des Textfelds getippt und dann auf eine Pfeiltaste gekommen ist, hat man ungewollt die Seite gewechselt.
 
-### Ausarbeitung aller Seiten
+#### Ausarbeitung aller Seiten
 Nachdem sowohl die Side-Navigation, der Footer als auch die Navigation mittels Pfeiltasten fertig waren, wurden die Seiten der Reihe nach gestalterisch ausgearbeitet. Dabei dienten die zuvor erarbeiteten Artefakte als Referenzen, die jedoch während der Umsetzung aktiv weitergedacht wurden. Dies ermöglichte das Einbringen von neue Ideen und gleichermaßen die Prüfung des Konzepts auf Umsetzbarkeit.
 
 #### Seiten & Inhalte
@@ -110,23 +94,55 @@ Nachdem sowohl die Side-Navigation, der Footer als auch die Navigation mittels P
 | Error | Fehlerseite für nicht vorhandene Inhalte |
 | Success | Nutzerfeedback, sobald Kontaktformular abgeschickt wurde |
 
-Mit jeder Seite und neuen Idee wuchs styles.css sowohl mit Grundlagen als auch individuellen Ausarbeitungen, wodurch der Überblick allmählich verloren ging. In dem Zuge wurde styles.css in einzelne, seitenspezifische als auch grundlegende Datein aufgeteilt.
+Mit jeder Seite und neuen Ideen wuchs styles.css sowohl mit Grundlagen als auch individuellen Ausarbeitungen, wodurch der Überblick allmählich verloren ging. In dem Zuge wurde styles.css in einzelne, seitenspezifische als auch grundlegende Datein aufgeteilt.
 
 #### CSS-Dateien & Inhalte
 
 | File | Content
 |------|-----|
 | base.css | Grundraster inkl. Farbschema, Schrift und Layout von Navigation und Footer |
-| responsive.css | |
-| about.css | |
-| music.css | |
-| videos.css | |
-| lyrics.css | |
-| goodguy.css | |
-| equipment.css | |
-| contact.css | |
-| policy.css | |
-| 404.css | |
-| success.css | |
+| responsive.css | Media Queries für Breakpoints: 800px & 400px |
+| about.css | Spezifisches Styling |
+| music.css | " |
+| videos.css | " |
+| lyrics.css | " |
+| goodguy.css | " |
+| equipment.css | " |
+| contact.css | " |
+| policy.css | " |
+| 404.css | " |
+| success.css | " |
 
-FOLGT
+#### Interaktivität
+Im weiteren Verlauf der Erarbeitungsphase wurden unterschiedliche "Add-On"-Features recherchiert, die die Webpräsenz thematisch immersiver machen. In dem Zuge wurde ein Playbutton auf der Startseite `index.html` implementiert, der Vogelgesang abspielt. Diese Idee wurde mittels JavaScript umgesetzt. Dieses Feature wurde anschließend für ein paar Tage beibehalten, bis dieses für eine anderweitige Idee umgewandelt wurde um Doppelungen zu vermeiden: Ein Playbutton für `music.html`, wo Footage vom ausgewählte Musikvideo im Hintergrund spielt.
+
+Herausforderung: Wahrung von Barrierefreiheit inkl. Kontrast zwischen Hintergrundvideo und Text.
+Lösung: Evaluierung des zuvor implementierten Playbuttons für Ambiente -> JavaScript Anpassung, sodass durch den Playbutton der Hintergrund gesteuert werden kann.
+Verworfen: Playbutton für Vogelgesang über Startseite
+
+#### Breakpoints
+Für die Media Queries wurden insgesamt zwei Breakpoints definiert: 800px & 400px.
+Zunächst wurde das Layout für den größeren Breakpoint ausgearbeitet, um so die Grundlage für den kleineren Breakpoint zu erarbeiten. Dabei wurden unterschiedliche Eigenschaften 
+
+Innerhalb der Konzeptionsphase wurde sich aufgrund fehlender Zeit mit dem Thema Breakpoints nur bedingt auseinandergesetzt. Um dies für diese Phase aufzuholen, wurden diverse Umsetzungsmöglichkeit recherchiert und ausprobiert, sodass die funktionsweise greifbar wurde. Nachdem ein sinniges Grundlayout erarbeitet wurde, wurde auch hier eine separate CSS-Datei erstellt, welche für alle Seiten eine Media Query für 800px umfasst. 
+
+#### Evaluaierung & Überarbeitung
+Mit der Implementierung von Breakpoints wurde ersichtlich, dass die aktuellen Gestaltungslösungen für die Seiten „videos“, „lyrics“ + „goodguy“, „equipment“ und „contact“ nur bedingt mit dem angestrebten Stil der Seite übereinstimmen, wodurch diese erneut iterativ überarbeitet wurden. Dabei konnten neue Elemente erarbeitet werden, die folglich für alle weiteren Seiten berücksichtigt wurden.
+
+# Neu
+`lyrics.html` -> Neue Gestaltungslösung, um Stilrichtung der Seite zu vereinheitlichen inkl. "coming soon", anstatt zu `404.html` zu führen.
+`videos.html` -> Neue Gestaltungslösung in Form eines Videoplayers. Das ausgewählte Video wird groß, die anderen verweilen klein -> das ausgewählte Video wird als ausgewählt hinterlegt.
+`goodguy.html` -> Neue Gestaltungslösung, um "Read-Along" zu ermöglichen. Sprich, sowohl das Video als auch der Lyrics sind gleichermaßen sichtbar, damit man den Lyrics verfolgen kann und ggf. mitsingen kann.
+`equipment.html` -> Neue Gestaltungslösung in Anlehnung an `lyrics.html`
+`contact.html` -> Neue Gestaltungslösung inkl. Validierung + `success.html`
+
+#### Illustrationen erweitern
+Während der Überarbeitung wurde eine weitere Idee iterativ ausgearbeitet: die Möglichkeit einzelne Illustrationen zu erweitern. Diese Idee wurde zunächst nur für `persona.html` umgesetzt, sodass man die beschriebenen Eigenschaften wie u.a. Farben, Haare, etc. über das Hero-Image vollständig ansehen kann. Zunächst wurde versucht dieses Feature per Drag-and-Drop zu realisieren, indem die unterschiedlichen Elemente modular verschoben werden konnten. Dabei wurde jedoch ersichtlich, dass zusätzliche Icons nur bedingt auf diese Interaktionsmöglichkeit hinweisen und zum Teil sogar störend sind.
+
+In dem Zuge wurde sich dazu entschieden das Feature "zu verstecken", bzw. nur per "Point and Click" umzusetzen, indem man auf die Illustration direkt klickt. Diese Interaktion wird durch einen sehr subtilen Hover-Effekt ersichtlich, der letztendlich nicht von den Inhalten der Seite ablenken soll. Nichtsdestotrotz konnte ich mir gut vorstellen, dass Nutzer:innen auf die Illustration klicken wollen würden und ggf. positiv überrascht sind, wenn es sich durch einen Klick vergrößern würde.
+
+Um die Interaktion zu vereinheitlichen wurde das Feature ebenfalls für `equipment.html` umgesetzt, da hier das Layout der Seite ähnlich wie bei `persona.html` ist, sodass man diese Interaktion höchstwahrscheinlich hier auch erwartet.
+
+___
+
+## Finalisierungsphase
