@@ -92,7 +92,6 @@ if (player) {
         title.textContent = btn.dataset.title;
         role.innerHTML = btn.dataset.role;
 
-        // Streaming-Icons neu aufbauen (nur die, die es gibt)
         links.innerHTML = "";
         services.forEach((s) => {
             const url = btn.dataset[s.key];

@@ -34,7 +34,7 @@
     height: 100%;
     object-fit: cover;
     filter: blur(6px) brightness(0.4);
-    transform: scale(1.06);   /* verdeckt die hellen Ränder, die Blur an den Kanten erzeugt */
+    transform: scale(1.06);
 }
 
 .grid-item-new .page-header,
