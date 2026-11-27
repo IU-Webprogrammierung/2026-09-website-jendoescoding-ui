@@ -96,22 +96,17 @@ Nachdem sowohl die Side-Navigation, der Footer als auch die Navigation mittels P
 
 Mit jeder Seite und neuen Ideen wuchs styles.css sowohl mit Grundlagen als auch individuellen Ausarbeitungen, wodurch der Überblick allmählich verloren ging. In dem Zuge wurde styles.css in einzelne, seitenspezifische als auch grundlegende Datein aufgeteilt.
 
-#### CSS-Dateien & Inhalte
-
-| File | Content
-|------|-----|
-| base.css | Grundraster inkl. Farbschema, Schrift und Layout von Navigation und Footer |
-| responsive.css | Media Queries für Breakpoints: 800px & 400px |
-| about.css | Spezifisches Styling |
-| music.css | " |
-| videos.css | " |
-| lyrics.css | " |
-| goodguy.css | " |
-| equipment.css | " |
-| contact.css | " |
-| policy.css | " |
-| 404.css | " |
-| success.css | " |
+#### Projektstruktur
+├── index.html, about.html, persona.html, music.html, videos.html,
+│   lyrics.html, goodguy.html, equipment.html, contact.html,
+│   policy.html, success.html, 404.html
+├── script.js
+├── css/
+│   ├── base.css            Grid, Farben, Typografie, gemeinsame Komponenten
+│   ├── responsive.css      Breakpoints für Tablet und Smartphone
+│   └── pages/              Seitenspezifische Stile
+├── htmx-components/        header.html, footer.html
+└── assets/                 Illustrationen, Icons, Vorschaubilder, Hintergrundvideo
 
 #### Interaktivität
 Im weiteren Verlauf der Erarbeitungsphase wurden unterschiedliche "Add-On"-Features recherchiert, die die Webpräsenz thematisch immersiver machen. In dem Zuge wurde ein Playbutton auf der Startseite `index.html` implementiert, der Vogelgesang abspielt. Diese Idee wurde mittels JavaScript umgesetzt. Dieses Feature wurde anschließend für ein paar Tage beibehalten, bis dieses für eine anderweitige Idee umgewandelt wurde um Doppelungen zu vermeiden: Ein Playbutton für `music.html`, wo Footage vom ausgewählte Musikvideo im Hintergrund spielt.
@@ -129,20 +124,45 @@ Innerhalb der Konzeptionsphase wurde sich aufgrund fehlender Zeit mit dem Thema 
 #### Evaluaierung & Überarbeitung
 Mit der Implementierung von Breakpoints wurde ersichtlich, dass die aktuellen Gestaltungslösungen für die Seiten „videos“, „lyrics“ + „goodguy“, „equipment“ und „contact“ nur bedingt mit dem angestrebten Stil der Seite übereinstimmen, wodurch diese erneut iterativ überarbeitet wurden. Dabei konnten neue Elemente erarbeitet werden, die folglich für alle weiteren Seiten berücksichtigt wurden.
 
-# Neu
-`lyrics.html` -> Neue Gestaltungslösung, um Stilrichtung der Seite zu vereinheitlichen inkl. "coming soon", anstatt zu `404.html` zu führen.
-`videos.html` -> Neue Gestaltungslösung in Form eines Videoplayers. Das ausgewählte Video wird groß, die anderen verweilen klein -> das ausgewählte Video wird als ausgewählt hinterlegt.
-`goodguy.html` -> Neue Gestaltungslösung, um "Read-Along" zu ermöglichen. Sprich, sowohl das Video als auch der Lyrics sind gleichermaßen sichtbar, damit man den Lyrics verfolgen kann und ggf. mitsingen kann.
-`equipment.html` -> Neue Gestaltungslösung in Anlehnung an `lyrics.html`
-`contact.html` -> Neue Gestaltungslösung inkl. Validierung + `success.html`
-
-#### Illustrationen erweitern
-Während der Überarbeitung wurde eine weitere Idee iterativ ausgearbeitet: die Möglichkeit einzelne Illustrationen zu erweitern. Diese Idee wurde zunächst nur für `persona.html` umgesetzt, sodass man die beschriebenen Eigenschaften wie u.a. Farben, Haare, etc. über das Hero-Image vollständig ansehen kann. Zunächst wurde versucht dieses Feature per Drag-and-Drop zu realisieren, indem die unterschiedlichen Elemente modular verschoben werden konnten. Dabei wurde jedoch ersichtlich, dass zusätzliche Icons nur bedingt auf diese Interaktionsmöglichkeit hinweisen und zum Teil sogar störend sind.
-
-In dem Zuge wurde sich dazu entschieden das Feature "zu verstecken", bzw. nur per "Point and Click" umzusetzen, indem man auf die Illustration direkt klickt. Diese Interaktion wird durch einen sehr subtilen Hover-Effekt ersichtlich, der letztendlich nicht von den Inhalten der Seite ablenken soll. Nichtsdestotrotz konnte ich mir gut vorstellen, dass Nutzer:innen auf die Illustration klicken wollen würden und ggf. positiv überrascht sind, wenn es sich durch einen Klick vergrößern würde.
-
-Um die Interaktion zu vereinheitlichen wurde das Feature ebenfalls für `equipment.html` umgesetzt, da hier das Layout der Seite ähnlich wie bei `persona.html` ist, sodass man diese Interaktion höchstwahrscheinlich hier auch erwartet.
+##### Neu
+`lyrics.html` -> Neue Gestaltungslösung, um Stilrichtung der Seite zu vereinheitlichen inkl. "coming soon", anstatt zu `404.html` zu führen.<br>
+`videos.html` -> Neue Gestaltungslösung in Form eines Videoplayers. Das ausgewählte Video wird groß, die anderen verweilen klein -> das ausgewählte Video wird als ausgewählt hinterlegt.<br>
+`goodguy.html` -> Neue Gestaltungslösung, um "Read-Along" zu ermöglichen. Sprich, sowohl das Video als auch der Lyrics sind gleichermaßen sichtbar, damit man den Lyrics verfolgen kann und ggf. mitsingen kann.<br>
+`equipment.html` -> Neue Gestaltungslösung in Anlehnung an `lyrics.html`<br>
+`contact.html` -> Neue Gestaltungslösung inkl. Validierung + `success.html`<br>
 
 ___
 
 ## Finalisierungsphase
+Nachdem das Feedback für die vorletzte Phase eingegangen und dieses in den aktuellen Stand des Projekt eingeflossen ist, begann die letzte Phase des Creative Labs. In dieser wurde das Konzept erneut verfeinert und durch weitere Funktionen erweitert. Abschließend wurde mittels der Browserextension von WAVE sowie Lighthouse eine Barrierefreiheitsanalyse durchgeführt.
+
+#### Code-Qualität
+Mittels des erhaltenen Feedbacks wurden sowohl die HTML als auch CSS-Dateien überarbeitet. Dabei spielten die Umstrukturierung von tags, Pixelgrößen zu rem sowie das grundlegende Aufräumen der Dateien eine große Rolle. Zusätzliche wurde sich in dieser Phase noch mit dem Thema CSS-Nesting auseinandergesetzt.
+
+#### Dark Mode
+Um die Komplexität der Webpräsenz um sinnige Funktionen zu erweitern, wurde sich dazu entschieden einen Dark Mode hinzuzufügen. Die Umsetzung erfolgt iterativ und durch verschiedene Ansätze: Letztendlich wurde diese Funktion durch einen Schalter (ähnlich wie der Playbutton für `music.html`), JavaScript und CSS in die Webpräsenz implementiert. Dieser erkennt automatisch, welches Theme durch das System präferiert wird, sodass entweder light oder dark von Beginn an für die Nutzer:innen sichtbar ist.
+
+Des Weiteren wurde sich dazu entschieden die verschiedenen Icons und Grafiken nicht separat auszutauschen, sondern mittels einem Filter zu invertieren. So konnte zusätzliche Arbeit und nachträgliche Pflege vereinfacht werden.
+
+#### Mehrsprachigkeit
+Eine weitere Funktion, die in dieser Phase erarbeitet wurde war die Möglichkeit, die Seite auch auf Deutsch einzusehen. Dabei wurde in jeder Seite ein Sprachumschalter implementiert sowie die einzelnen Textpassagen mit dem Schlüssel "data-trans" und dem Zustand "aria-pressed" ausgestattet, sodass die einzelnen Übersetzungen in js eingepflegt und der Switch zwischen beiden Sprache ermöglicht wurde.
+
+Die Position dieser Funktion musste für Mobile nachträglich angepasst werden, um nicht mit dem Toggle für Dark Mode zu clashen.
+
+
+#### Illustrationen erweitern
+Eine letzte Funktion, die für diese Phase zunächst gebrainstormed und dann umgesetzte wurde war die Möglichkeit einzelne Illustrationen zu erweitern. Diese Idee wurde zunächst nur für `persona.html` umgesetzt, sodass man die beschriebenen Eigenschaften wie u.a. Farben, Haare, etc. über das Hero-Image vollständig ansehen kann. Initial wurde versucht die Funktion per Drag-and-Drop zu realisieren, indem die unterschiedlichen Elemente modular verschoben werden konnten. Dabei wurde jedoch ersichtlich, dass zusätzliche Icons nur bedingt auf diese Interaktionsmöglichkeit hinweisen und zum Teil sogar störend sind.
+
+In dem Zuge wurde sich dazu entschieden das Feature "zu verstecken", bzw. nur per "Point and Click" umzusetzen, indem man auf die Illustration direkt klickt. Diese Interaktion wird durch einen sehr subtilen Hover-Effekt ersichtlich, der letztendlich nicht von den Inhalten der Seite ablenken soll. Nichtsdestotrotz konnte ich mir gut vorstellen, dass Nutzer:innen auf die Illustration klicken wollen würden und ggf. positiv überrascht sind, wenn diese sich durch einen Klick vergrößern würde.
+
+Um die Interaktion zu vereinheitlichen wurde das Feature ebenfalls für `equipment.html` umgesetzt, da hier das Layout der Persona-Seite ähnelt, sodass man diese Interaktion höchstwahrscheinlich hier auch erwartet.
+
+#### Barrierefreiheit
+Abschließend wurde die erarbeitete Webpräsenz durch die Browsererweiterung WAVE und Lighthouse überprüft. Dabei wurde deutlich, dass eindeutige ID's fehlten, der Kontrast von `music.html`erhöht, alt-Text ergänzt sowie vereinzelte Layouts angepasst werden mussten.
+
+## Fazit
+Das Ergebnis des 3-monatigen Creative Labs ist, wie in der Konzeptionsphase angestrebt, eine Webpräsenz für die Künstlerpersona jen. Aus dem ursprünglichen Konzept ist eine vollwertige Website entstanden, die neben den geplanten Funktionen weitere umfasst, die erst durch das hinzugewonnene Wissen möglich wurden.
+
+Da zu Beginn des Labs nur grundlegende Kenntnisse in HTML, CSS und JavaScript vorlagen, war das Projekt eine große Herausforderung, die ich mit viel Motivation und Liebe für das gewählte Thema gemeistert habe. Dabei habe ich gelernt, dass ich meine Arbeitsweise grundlegend strukturierter gestalten muss, um auch bei großen und (mir noch fremd vorkommenden) komplexen Projekten den Überblick zu behalten und die Qualität des Ergebnisses zu sichern. Zugleich hat mir das Projekt gezeigt, wie vielseitig Programmieren ist und wie viel Freude es machen kann; auch wenn zuvorderst viel schief geht.
+
+Als nächsten Schritt plane ich, mein eigenes Portfolio ebenfalls mit HTML, CSS und JavaScript umzusetzen, um das Erlernte in einem neuen Kontext direkt anzuwenden und zu festigen, in der Hoffnung, dass mich diese Skills sowohl persönlich als auch beruflich weiterbringen.
